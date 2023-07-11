@@ -1,0 +1,58 @@
+@import "../style/fonts";
+
+
+$mobile: "screen and (max-width: 599px)";
+$tablet: "screen and (min-width: 600px) and (max-width: 1023px)";
+$desktop: "screen and (min-width: 1024px)";
+
+
+$background: #F3EFEA;
+$green: #A1B29F;
+$blue: #4C6D77;
+$text_color: #57463A;
+$light_btn_text: #F6F6F6;
+$brown_line: #715B4B;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+%title {
+    font-family: 'Tenor Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #57463A;
+    font-size: 48px;
+
+    @media #{$mobile} {
+        font-size: 32px;
+    }
+}
+
+%text {
+    font-family: 'Open Sans', sans-serif;
+    color: #323232;
+    // font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+%img-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #323232;
+    font-size: 18px;
+}
+
+%button {
+    cursor: pointer;
+}
