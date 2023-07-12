@@ -1,17 +1,4 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
-  src: local("../assets/fonts/Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../assets/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Tenor Sans";
-  src: url("../assets/fonts/Tenor_Sans/TenorSans.eot");
-  src: local("../assets/fonts/Tenor_Sans/Tenor Sans"), local("../assets/fonts/Tenor_Sans/TenorSans"), url("../assets/fonts/Tenor_Sans/TenorSans.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Tenor_Sans/TenorSans.woff2") format("woff2"), url("../assets/fonts/Tenor_Sans/TenorSans.woff") format("woff"), url("../assets/fonts/Tenor_Sans/TenorSans.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +23,7 @@
   }
 }
 
-.text {
+.text-xs, .text {
   font-family: "Open Sans", sans-serif;
   color: #323232;
   font-style: normal;
@@ -45,6 +32,14 @@
 
 .button {
   cursor: pointer;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.text-xs {
+  font-size: 16px;
 }
 
 .button {
@@ -70,6 +65,7 @@ body {
 }
 .front-block__info {
   display: flex;
+  flex-basis: 50%;
   flex-direction: column;
   justify-content: center;
   padding: 37px;
@@ -88,4 +84,38 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
+  margin-right: 103px;
+}
+.front-block__media-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.brand-meaning {
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  padding: 160px 134px 0 140px;
+  margin-bottom: 160px;
+}
+.brand-meaning__title {
+  margin-bottom: 100px;
+}
+.brand-meaning__definitions {
+  display: flex;
+  justify-content: space-between;
+}
+.brand-meaning__item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 14px;
+}
+.brand-meaning__text {
+  width: 268px;
+  text-align: center;
+}
+.brand-meaning__line {
+  width: 360px;
+  border: solid 2px #715B4B;
 }/*# sourceMappingURL=home.css.map */

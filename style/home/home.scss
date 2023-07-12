@@ -2,7 +2,14 @@
 
 .text {
     @extend %text;
+    font-size: 18px;
 }
+
+.text-xs {
+    @extend %text;
+    font-size: 16px;
+}
+
 
 .title {
     @extend %title;
@@ -33,6 +40,7 @@ body {
 
     &__info {
         display: flex;
+        flex-basis: 50%;
         flex-direction: column;
         justify-content: center;
         padding: 37px;
@@ -54,5 +62,49 @@ body {
         display: flex;
         justify-content: flex-end;
         gap: 40px;
+        margin-right: 103px;
+    }
+
+    &__media-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+.brand-meaning {
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    padding: 160px 134px 0 140px;
+    margin-bottom: 160px;
+
+    &__title {
+        margin-bottom: 100px;
+    }
+
+
+    &__definitions {
+        display: flex;
+        justify-content: space-between;
+        // gap: 46px;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__text {
+        width: 268px;
+        text-align: center;
+    }
+
+    &__line {
+        width: 360px;
+        border: solid 2px #715B4B;
     }
 }
