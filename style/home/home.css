@@ -21,4 +21,71 @@
 .container-main {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.title {
+  font-family: "Tenor Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #57463A;
+  font-size: 48px;
+}
+@media screen and (max-width: 599px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button {
+  background-color: #A1B29F;
+  width: 245px;
+  height: 60px;
+  color: #F6F6F6;
+  border: none;
+}
+
+body {
+  background-color: #F3EFEA;
+}
+
+.front-block {
+  display: flex;
+  height: 776.3px;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
+.front-block__image {
+  flex-basis: 50%;
+}
+.front-block__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 37px;
+  padding-top: 161px;
+}
+.front-block__title {
+  padding-top: 17px;
+  margin-bottom: 40px;
+  max-width: 514px;
+}
+.front-block__button {
+  margin-top: 70px;
+  margin-bottom: 94px;
+}
+.front-block__media {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
 }/*# sourceMappingURL=home.css.map */

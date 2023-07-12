@@ -1,1 +1,58 @@
 @import "../template";
+
+.text {
+    @extend %text;
+}
+
+.title {
+    @extend %title;
+}
+
+.button {
+    @extend %button;
+    background-color: $green;
+    width: 245px;
+    height: 60px;
+    color: $light_btn_text;
+    border: none;
+}
+
+body {
+    background-color: $background;
+}
+
+.front-block {
+    display: flex;
+    height: 776.3px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+
+    &__image {
+        flex-basis: 50%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 37px;
+        padding-top: 161px;
+    }
+
+    &__title {
+        padding-top: 17px;
+        margin-bottom: 40px;
+        max-width: 514px;
+    }
+
+    &__button {
+        margin-top: 70px;
+        margin-bottom: 94px;
+    }
+
+    &__media {
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+}
