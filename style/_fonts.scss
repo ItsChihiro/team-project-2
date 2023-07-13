@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
 @font-face {
     font-family: 'Open Sans';
     src: url('../assets/fonts/Open_Sans/OpenSans-Light.eot');
@@ -10,14 +12,28 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Tenor Sans';
-    src: url('../assets/fonts/Tenor_Sans/TenorSans.eot');
-    src: local('../assets/fonts/Tenor_Sans/Tenor Sans'), local('../assets/fonts/Tenor_Sans/TenorSans'),
-        url('../assets/fonts/Tenor_Sans/TenorSans.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/Tenor_Sans/TenorSans.woff2') format('woff2'),
-        url('../assets/fonts/Tenor_Sans/TenorSans.woff') format('woff'),
-        url('../assets/fonts/Tenor_Sans/TenorSans.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Tenor Sans';
+//     src: url('../assets/fonts/Tenor_Sans/TenorSans.eot');
+//     src: local('../assets/fonts/Tenor_Sans/Tenor Sans'), local('../assets/fonts/Tenor_Sans/TenorSans'),
+//         url('../assets/fonts/Tenor_Sans/TenorSans.eot?#iefix') format('embedded-opentype'),
+//         url('../assets/fonts/Tenor_Sans/TenorSans.woff2') format('woff2'),
+//         url('../assets/fonts/Tenor_Sans/TenorSans.woff') format('woff'),
+//         url('../assets/fonts/Tenor_Sans/TenorSans.ttf') format('truetype');
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family:'Tenor Sans';
+//     src: url('../assets/fonts/fontie-package/ Sans.eot');
+// 	src: url('../assets/fonts/fontie-package/ Sans.eot?#iefix') format('embedded-opentype'),
+// 		url('../assets/fonts/fontie-package/ Tenor Sans.woff2') format('woff2'),
+// 		url('../assets/fonts/fontie-package/ Tenor Sans.woff') format('woff'),
+// 		url('../assets/fonts/fontie-package/ Tenor Sans.otf') format('opentype'),
+// 		url('../assets/fonts/fontie-package/ Tenor Sans.svg#Tenor Sans') format('svg');
+//     font-weight: 400;
+//     font-style: normal;
+//     font-stretch: normal;
+//     unicode-range: U+0020-00FE;
+// }

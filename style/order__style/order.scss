@@ -1,1 +1,59 @@
 @import "../template";
+@import "../fonts";
+
+// @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+
+.main {
+    &__order {
+        background-image: url(../../assets/img/images_order/background-order.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+
+    &__container {
+        min-height: 639px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__order-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__order-text {
+        color: $light_btn_text;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__order-worshop {
+        @extend %title-action;
+        line-height: 150%;
+    }
+
+    &__order-name {
+        @extend %title-action;
+        line-height: 150%;
+    }
+
+    // &__order-btn{}
+
+    &__button{
+        @extend %button;
+        color: $brown_line;
+        background-color: $light_btn_text;
+        border: none;
+        padding: 18px 92px 18px 92px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    }
+
+    

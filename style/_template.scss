@@ -20,6 +20,10 @@ $brown_line: #715B4B;
     box-sizing: border-box;
 }
 
+body {
+    background-color: $background;
+}
+
 .container-main {
     max-width: 1440px;
     margin: 0 auto;
@@ -35,6 +39,13 @@ $brown_line: #715B4B;
     @media #{$mobile} {
         font-size: 32px;
     }
+}
+
+%title-action {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: $light_btn_text;
 }
 
 %text {
