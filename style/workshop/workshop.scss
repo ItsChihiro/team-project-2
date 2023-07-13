@@ -1,1 +1,68 @@
+@import "../_fonts.scss";
 @import "../template";
+
+
+.block-workshops {
+    // display: flex;
+    // flex-direction: column;
+    // align-content: space-around;
+    width: 100%;
+    &__button{
+        @extend %img-subtitle;
+    }
+    @extend %button;
+
+    &__trustus {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-direction: column;
+        height: 400px;
+        background-image: url('/assets/img/images_workshop/BCGTheyTrustUs.png');
+
+    }
+}
+
+.common-container {
+    width: 100%;
+}
+
+.textonbcg {
+    @extend %title;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.block-ourworks {
+
+    &__title{
+        @extend %title;
+    }
+
+    &__pict {
+        font-family: 'Open Sans';
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    &__subtitletitle {
+        padding-top: 2%;
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: max-content max-content;
+        padding-left: 5%;
+        column-gap: 35px;
+        row-gap: 30px;
+    }
+}
+
+.title {
+    @extend %title;
+}

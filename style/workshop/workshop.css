@@ -1,17 +1,5 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
-  src: local("../assets/fonts/Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../assets/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Tenor Sans";
-  src: url("../assets/fonts/Tenor_Sans/TenorSans.eot");
-  src: local("../assets/fonts/Tenor_Sans/Tenor Sans"), local("../assets/fonts/Tenor_Sans/TenorSans"), url("../assets/fonts/Tenor_Sans/TenorSans.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Tenor_Sans/TenorSans.woff2") format("woff2"), url("../assets/fonts/Tenor_Sans/TenorSans.woff") format("woff"), url("../assets/fonts/Tenor_Sans/TenorSans.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,4 +9,72 @@
 .container-main {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.title, .block-ourworks__title, .textonbcg {
+  font-family: "Tenor Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #57463A;
+  font-size: 48px;
+}
+@media screen and (max-width: 599px) {
+  .title, .block-ourworks__title, .textonbcg {
+    font-size: 32px;
+  }
+}
+
+.block-workshops__button {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #323232;
+  font-size: 18px;
+}
+
+.block-workshops {
+  cursor: pointer;
+}
+
+.block-workshops {
+  width: 100%;
+}
+.block-workshops__trustus {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+  height: 400px;
+  background-image: url("/assets/img/images_workshop/BCGTheyTrustUs.png");
+}
+
+.common-container {
+  width: 100%;
+}
+
+.textonbcg {
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.block-ourworks__pict {
+  font-family: "Open Sans";
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.block-ourworks__subtitletitle {
+  padding-top: 2%;
+}
+.block-ourworks__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: max-content max-content;
+  padding-left: 5%;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  row-gap: 30px;
 }/*# sourceMappingURL=workshop.css.map */
