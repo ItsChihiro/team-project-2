@@ -54,6 +54,13 @@ body {
   background-color: #F3EFEA;
 }
 
+.main__brand-meaning {
+  margin-bottom: 160px;
+}
+.main__cards {
+  margin-bottom: 160px;
+}
+
 .front-block {
   display: flex;
   height: 776.3px;
@@ -96,7 +103,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 160px 134px 0 140px;
-  margin-bottom: 160px;
 }
 .brand-meaning__title {
   margin-bottom: 100px;
@@ -118,4 +124,33 @@ body {
 .brand-meaning__line {
   width: 360px;
   border: solid 2px #715B4B;
+}
+
+.our-products {
+  height: 674px;
+  padding-left: 140px;
+}
+.our-products__title {
+  margin-bottom: 100px;
+}
+.our-products__cards {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  max-width: 290px;
+  min-height: 242px;
+  width: 100%;
+  border: 1px solid #000;
+  padding: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=home.css.map */

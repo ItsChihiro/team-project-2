@@ -35,6 +35,10 @@ body {
     &__brand-meaning {
         margin-bottom: 160px;
     }
+
+    &__cards {
+        margin-bottom: 160px;
+    }
 }
 
 .front-block {
@@ -115,5 +119,44 @@ body {
     &__line {
         width: 360px;
         border: solid 2px #715B4B;
+    }
+}
+
+.our-products {
+    height: 674px;
+    padding-left: 140px;
+
+    &__title {
+        margin-bottom: 100px;
+    }
+
+    &__cards {
+        width: 1160px;
+        // width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        // grid-template-rows: 1fr 1fr;
+
+        @media #{$tablet} {}
+    }
+}
+
+
+.card {
+    max-width: 290px;
+    min-height: 242px;
+    width: 100%;
+    border: 1px solid #000;
+    // padding: 56px 95px 47px 95px;
+    padding: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 20px;
     }
 }
