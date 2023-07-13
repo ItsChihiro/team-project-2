@@ -28,6 +28,15 @@ body {
     background-color: $background;
 }
 
+
+.main {
+    &__front-block {}
+
+    &__brand-meaning {
+        margin-bottom: 160px;
+    }
+}
+
 .front-block {
     display: flex;
     height: 776.3px;
@@ -78,7 +87,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 160px 134px 0 140px;
-    margin-bottom: 160px;
+    // margin-bottom: 160px;
 
     &__title {
         margin-bottom: 100px;
