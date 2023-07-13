@@ -54,11 +54,20 @@ body {
   background-color: #F3EFEA;
 }
 
-.main__brand-meaning {
+.main__front-block {
   margin-bottom: 160px;
 }
-.main__cards {
+.main__brand-meaning-block {
   margin-bottom: 160px;
+}
+.main__products-block {
+  margin-bottom: 160px;
+}
+.main__family-block {
+  margin-bottom: 160px;
+}
+.main__video-block {
+  margin-bottom: 200px;
 }
 
 .front-block {
@@ -67,16 +76,14 @@ body {
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
 }
-.front-block__image {
-  flex-basis: 50%;
+.front-block__img {
+  width: 719px;
 }
 .front-block__info {
   display: flex;
-  flex-basis: 50%;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: center;
-  padding: 37px;
-  padding-top: 161px;
+  padding: 198.5px 37px 37px 37px;
 }
 .front-block__title {
   padding-top: 17px;
@@ -102,7 +109,7 @@ body {
   height: 386px;
   display: flex;
   flex-direction: column;
-  padding: 160px 134px 0 140px;
+  padding: 0 134px 0 140px;
 }
 .brand-meaning__title {
   margin-bottom: 100px;
@@ -127,7 +134,7 @@ body {
 }
 
 .our-products {
-  height: 674px;
+  height: 640px;
   padding-left: 140px;
 }
 .our-products__title {
@@ -153,4 +160,42 @@ body {
   height: 100px;
   width: 100px;
   margin-bottom: 20px;
+}
+
+.family__title {
+  margin-bottom: 100px;
+  padding-left: 140px;
+}
+.family__content {
+  display: flex;
+}
+.family__img {
+  width: 704px;
+}
+.family__info {
+  background: #EBEEEB;
+  padding: 68px 185px 48px 40px;
+  flex-grow: 1;
+}
+.family__article {
+  width: 515px;
+}
+.family__article-title {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.family__text {
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+
+.video {
+  height: 900px;
+  padding-left: 140px;
+}
+.video__title {
+  margin-bottom: 100px;
 }/*# sourceMappingURL=home.css.map */
