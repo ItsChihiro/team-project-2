@@ -21,4 +21,14 @@
 .container-main {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 136px;
 }/*# sourceMappingURL=header.css.map */

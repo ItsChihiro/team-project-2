@@ -1,1 +1,11 @@
 @import "../template";
+
+.header{
+  width: 100%;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 136px;
+  }
+  }
