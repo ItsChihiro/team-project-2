@@ -2,6 +2,7 @@
 
 .header{
   width: 100%;
+  background-color: #F3EFEA;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -11,6 +12,7 @@
   .header__nav{
     max-width: 1197px;
     width: 100%;
+    padding-top: 5%;
 
     .header__items{
       list-style: none;
@@ -28,7 +30,6 @@
     .header__logo{
       width: 87px;
       height: 86px;
-      padding-bottom: 10%;
     }
 
     }
