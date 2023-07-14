@@ -31,6 +31,10 @@ $left: 140px;
     height: 60px;
     background-color: $green;
     color: $light_btn_text;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button:hover {
@@ -125,7 +129,6 @@ body {
     &__title {
         margin-bottom: 100px;
     }
-
 
     &__definitions {
         display: flex;
@@ -232,6 +235,7 @@ body {
 
 
 .our-services {
+    height: 1257px;
 
     &__title {
         margin-bottom: 100px;
@@ -264,10 +268,6 @@ body {
     }
 }
 
-img {
-    max-width: 100%;
-}
-
 .twins-block {
     display: flex;
 }
@@ -278,7 +278,6 @@ img {
     height: 590px;
     margin: 0 auto;
     border: 7px solid $green;
-
 
     &__frame {
         width: 1135px;
@@ -295,7 +294,6 @@ img {
         margin-left: 258px
     }
 
-
     &__text {
         @extend %text;
         font-size: 24px;
@@ -304,12 +302,10 @@ img {
         margin-left: 95px;
     }
 
-
     &__logo {
         display: flex;
         justify-content: flex-end;
     }
-
 
     &__logo-img {
         margin-bottom: 38px;

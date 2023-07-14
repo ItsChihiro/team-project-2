@@ -59,6 +59,10 @@
   height: 60px;
   background-color: #A1B29F;
   color: #F6F6F6;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
@@ -220,6 +224,9 @@ body {
   margin-bottom: 100px;
 }
 
+.our-services {
+  height: 1257px;
+}
 .our-services__title {
   margin-bottom: 100px;
   padding-left: 140px;
@@ -243,10 +250,6 @@ body {
 .our-services__workshop-text {
   margin-bottom: 55px;
   width: 534px;
-}
-
-img {
-  max-width: 100%;
 }
 
 .twins-block {
