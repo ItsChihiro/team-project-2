@@ -10,7 +10,7 @@
   margin: 0 auto;
 }
 
-.title {
+.article-title, .title {
   font-family: "Tenor Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -18,12 +18,12 @@
   font-size: 48px;
 }
 @media screen and (max-width: 599px) {
-  .title {
+  .article-title, .title {
     font-size: 32px;
   }
 }
 
-.text-xs, .text {
+.text-xs, .text, .button {
   font-family: "Open Sans", sans-serif;
   color: #323232;
   font-style: normal;
@@ -31,6 +31,9 @@
 }
 
 .button {
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -42,12 +45,21 @@
   font-size: 16px;
 }
 
+.article-title {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 40px;
+}
+
 .button {
-  background-color: #A1B29F;
   width: 245px;
   height: 60px;
+  background-color: #A1B29F;
   color: #F6F6F6;
-  border: none;
+}
+
+.button:hover {
+  background-color: #678064;
 }
 
 body {
@@ -67,6 +79,9 @@ body {
   margin-bottom: 160px;
 }
 .main__video-block {
+  margin-bottom: 200px;
+}
+.main__our-services-block {
   margin-bottom: 200px;
 }
 
@@ -144,12 +159,15 @@ body {
   width: 1160px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #000;
 }
+
 .card {
   max-width: 290px;
   min-height: 242px;
   width: 100%;
   border: 1px solid #000;
+  border-collapse: collapse;
   padding: auto auto;
   display: flex;
   flex-direction: column;
@@ -180,10 +198,6 @@ body {
 .family__article {
   width: 515px;
 }
-.family__article-title {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
 .family__text {
   height: 135px;
   display: flex;
@@ -198,4 +212,36 @@ body {
 }
 .video__title {
   margin-bottom: 100px;
+}
+
+.our-services__title {
+  margin-bottom: 100px;
+  padding-left: 140px;
+}
+.our-services__content {
+  height: 1071.5;
+}
+.our-services__order-info {
+  padding: 110px 140px 100px 41px;
+  flex-grow: 1;
+  background: #E3DACE;
+}
+.our-services__order-text {
+  margin-bottom: 55px;
+}
+.our-services__workshop-info {
+  padding: 110px 140px 100px 41px;
+  flex-grow: 1;
+  background: #D4CDC3;
+}
+.our-services__workshop-text {
+  margin-bottom: 55px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.twins-block {
+  display: flex;
 }/*# sourceMappingURL=home.css.map */

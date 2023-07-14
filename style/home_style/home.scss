@@ -17,13 +17,23 @@ $left: 140px;
     @extend %title;
 }
 
+.article-title {
+    @extend %title;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 40px
+}
+
 .button {
     @extend %button;
-    background-color: $green;
     width: 245px;
     height: 60px;
+    background-color: $green;
     color: $light_btn_text;
-    border: none;
+}
+
+.button:hover {
+    background-color: #678064;
 }
 
 body {
@@ -49,6 +59,10 @@ body {
     }
 
     &__video-block {
+        margin-bottom: 200px;
+    }
+
+    &__our-services-block {
         margin-bottom: 200px;
     }
 }
@@ -143,8 +157,7 @@ body {
         width: 1160px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-
-        @media #{$tablet} {}
+        border: 1px solid #000;
     }
 }
 
@@ -154,6 +167,7 @@ body {
     min-height: 242px;
     width: 100%;
     border: 1px solid #000;
+    border-collapse: collapse;
     padding: auto auto;
     display: flex;
     flex-direction: column;
@@ -192,11 +206,6 @@ body {
         width: 515px;
     }
 
-    &__article-title {
-        font-size: 24px;
-        margin-bottom: 40px;
-    }
-
     &__text {
         height: 135px;
         display: flex;
@@ -213,4 +222,46 @@ body {
     &__title {
         margin-bottom: 100px;
     }
+}
+
+
+
+.our-services {
+
+    &__title {
+        margin-bottom: 100px;
+        padding-left: $left;
+    }
+
+    &__content {
+        height: 1071.5;
+    }
+
+    &__order-info {
+        padding: 110px 140px 100px 41px;
+        flex-grow: 1;
+        background: #E3DACE;
+    }
+
+    &__order-text {
+        margin-bottom: 55px;
+    }
+
+    &__workshop-info {
+        padding: 110px 140px 100px 41px;
+        flex-grow: 1;
+        background: #D4CDC3;
+    }
+
+    &__workshop-text {
+        margin-bottom: 55px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.twins-block {
+    display: flex;
 }

@@ -54,5 +54,9 @@ $brown_line: #715B4B;
 }
 
 %button {
+    border: none;
+    transition-duration: 0.4s;
+    @extend %text;
+    font-size: 16px;
     cursor: pointer;
 }
