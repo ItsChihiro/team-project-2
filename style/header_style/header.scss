@@ -8,4 +8,29 @@
     align-items: center;
     min-height: 136px;
   }
+  .header__nav{
+    max-width: 1197px;
+    width: 100%;
+
+    .header__items{
+      list-style: none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 10%;
+      padding-right: 10%;
+      a {
+      text-decoration: none;
+      color: #323232;
+      font-size: 14px;
+      }
+      
+    .header__logo{
+      width: 87px;
+      height: 86px;
+      padding-bottom: 10%;
+    }
+
+    }
+  }
   }
