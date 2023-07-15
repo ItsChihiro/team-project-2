@@ -23,6 +23,11 @@
   margin: 0 auto;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .header {
   width: 100%;
   background-color: #F3EFEA;
@@ -36,15 +41,13 @@
 .header .header__nav {
   max-width: 1197px;
   width: 100%;
-  padding-top: 5%;
 }
 .header .header__nav .header__items {
   list-style: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
+  align-items: center;
 }
 .header .header__nav .header__items a {
   text-decoration: none;

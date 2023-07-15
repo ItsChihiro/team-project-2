@@ -1,37 +1,43 @@
 @import "../template";
 
-.header{
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.header {
   width: 100%;
   background-color: #F3EFEA;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 136px;
   }
-  .header__nav{
+
+  .header__nav {
     max-width: 1197px;
     width: 100%;
-    padding-top: 5%;
 
-    .header__items{
+    .header__items {
       list-style: none;
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding-left: 10%;
-      padding-right: 10%;
+      align-items: center;
+
       a {
-      text-decoration: none;
-      color: #323232;
-      font-size: 14px;
+        text-decoration: none;
+        color: #323232;
+        font-size: 14px;
       }
-      
-    .header__logo{
-      width: 87px;
-      height: 86px;
-    }
+
+      .header__logo {
+        width: 87px;
+        height: 86px;
+      }
 
     }
   }
-  }
+}
