@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -24,67 +24,78 @@
   }
 }
 
-.block-workshops__button {
+.button {
   font-family: "Open Sans", sans-serif;
   color: #323232;
   font-style: normal;
   font-weight: 300;
 }
 
-.block-workshops__button {
+.button {
   cursor: pointer;
+  border: none;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  height: 5vh;
 }
 
 .block-workshops {
   width: 100%;
 }
 .block-workshops__button {
-  font-size: 0.7rem;
-  font-weight: bold;
-  height: 3rem;
   color: #4C6D77;
   padding: 0 4% 0 4%;
 }
 .block-workshops__trustus {
-  position: relative;
+  height: 55vh;
+  padding-top: 8%;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   flex-direction: column;
   background: url("/assets/img/images_workshop/BCGTheyTrustUs.png");
   z-index: 0;
-  padding-top: 9%;
-  height: 50vh;
+}
+
+.common-container {
+  font-size: 48px;
 }
 
 .textonbcg {
-  font-size: 2rem;
+  font-size: 1em;
   color: aliceblue;
 }
 @media screen and (max-width: 599px) {
   .textonbcg {
-    font-size: 1rem;
+    font-size: 0.5em;
   }
 }
 
 .block-ourworks__button {
-  height: 5rem;
-  margin: 0 10% 0 10%;
+  background-color: #A1B29F;
+  color: aliceblue;
+  padding: 0 4% 0 4%;
+  margin-bottom: 5%;
+  font-weight: 700;
 }
 @media screen and (max-width: 599px) {
   .block-ourworks__button {
-    height: 1rem;
-    margin: 0 3% 0 3%;
+    height: 0.3em;
+    padding: 0 1% 0 1%;
   }
 }
 .block-ourworks__title {
   padding-top: 4%;
-  padding-left: 4%;
+  padding-left: 15%;
   margin-bottom: 4%;
+  font-size: 1em;
 }
 @media screen and (max-width: 599px) {
   .block-ourworks__title {
-    font-size: 1rem;
+    font-size: 0.5em;
   }
 }
 .block-ourworks__pict {
@@ -101,10 +112,15 @@
 .block-ourworks__wrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(4, fit-content(25em));
   grid-template-rows: 1fr 1fr;
-  padding-left: 5%;
   -moz-column-gap: 35px;
        column-gap: 35px;
   row-gap: 30px;
+}
+.block-ourworks__wrapper-button {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=workshop.css.map */
