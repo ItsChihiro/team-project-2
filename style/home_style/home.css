@@ -39,6 +39,11 @@
   cursor: pointer;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .text {
   font-size: 18px;
 }
@@ -134,7 +139,6 @@ body {
   height: 230px;
   display: flex;
   flex-direction: column;
-  padding: 0 134px 0 140px;
 }
 .brand-meaning__title {
   margin-bottom: 100px;
@@ -159,8 +163,7 @@ body {
 }
 
 .our-products {
-  height: 640px;
-  padding-left: 140px;
+  height: 645px;
 }
 .our-products__title {
   margin-bottom: 100px;
@@ -218,7 +221,6 @@ body {
 
 .video {
   height: 860px;
-  padding-left: 140px;
 }
 .video__title {
   margin-bottom: 100px;
@@ -259,7 +261,6 @@ body {
 .quality-assurance {
   width: 1160px;
   height: 590px;
-  margin: 0 auto;
   border: 7px solid #A1B29F;
 }
 .quality-assurance__frame {
