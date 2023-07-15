@@ -1,4 +1,17 @@
 @import "../template";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap');
+
+$background: #F3EFEA;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+}
 
 .container {
   width: 1160px;
@@ -7,7 +20,7 @@
 
 .header {
   width: 100%;
-  background-color: #F3EFEA;
+
 
   &__wrapper {
     display: flex;
@@ -31,6 +44,7 @@
         text-decoration: none;
         color: #323232;
         font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
       }
 
       .header__logo {

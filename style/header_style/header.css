@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
 @font-face {
   font-family: "Open Sans";
   src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
@@ -23,6 +24,16 @@
   margin: 0 auto;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3EFEA;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -30,7 +41,6 @@
 
 .header {
   width: 100%;
-  background-color: #F3EFEA;
 }
 .header__wrapper {
   display: flex;
@@ -53,6 +63,7 @@
   text-decoration: none;
   color: #323232;
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
 .header .header__nav .header__items .header__logo {
   width: 87px;
