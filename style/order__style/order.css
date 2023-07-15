@@ -1,12 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
-  src: local("../assets/fonts/Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../assets/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -33,17 +26,10 @@ body {
   cursor: pointer;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
-  src: local("../assets/fonts/Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../assets/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
 .main__order {
-  background-image: url(../../assets/img/images_order/background-order.png);
+  background-image: url(../../assets/img/order_images/background-order.png);
   background-repeat: no-repeat;
-  background-size: iinitial;
+  background-size: cover;
 }
 .main__container {
   min-height: 639px;
@@ -56,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 9% 0 0 0;
 }
 .main__order-text {
   color: #F6F6F6;
@@ -63,11 +50,30 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+@media screen and (max-width: 599px) {
+  .main__order-text {
+    font-size: 16px;
+    width: 80%;
+  }
+}
 .main__order-worshop {
-  line-height: 150%;
+  padding: 4% 0 0 0;
+}
+@media screen and (max-width: 599px) {
+  .main__order-worshop {
+    font-size: 32px;
+    width: 80%;
+    padding: 10% 0 0 0;
+  }
 }
 .main__order-name {
-  line-height: 150%;
+  padding: 8% 0 0 0;
+}
+@media screen and (max-width: 599px) {
+  .main__order-name {
+    font-size: 32px;
+    padding: 4% 0 0 0;
+  }
 }
 .main__button {
   color: #715B4B;
@@ -77,4 +83,10 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
+}
+@media screen and (max-width: 599px) {
+  .main__button {
+    margin-bottom: 20%;
+    padding: 18px 78px 18px 78px;
+  }
 }/*# sourceMappingURL=order.css.map */
