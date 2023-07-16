@@ -56,12 +56,20 @@ body {
     font-weight: 300;
 }
 
+%text-two {
+    font-family: 'Open Sans', sans-serif;
+    color: #323232;
+    // font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
 %img-subtitle {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     color: #323232;
-    font-size: 18px;
+    // font-size: 18px;
 }
 
 %button {
