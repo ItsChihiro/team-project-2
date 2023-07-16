@@ -52,12 +52,16 @@ body {
 }
 @media screen and (max-width: 599px) {
   .main__order-text {
-    font-size: 16px;
     width: 80%;
   }
 }
 .main__order-worshop {
   padding: 4% 0 0 0;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .main__order-worshop {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 599px) {
   .main__order-worshop {
@@ -68,6 +72,11 @@ body {
 }
 .main__order-name {
   padding: 8% 0 0 0;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .main__order-name {
+    font-size: 43px;
+  }
 }
 @media screen and (max-width: 599px) {
   .main__order-name {
@@ -83,6 +92,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .main__button {
+    padding: 18px 85px 18px 85px;
+  }
 }
 @media screen and (max-width: 599px) {
   .main__button {

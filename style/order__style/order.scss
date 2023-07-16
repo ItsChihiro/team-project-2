@@ -33,7 +33,6 @@
         font-weight: 400;
 
         @media #{$mobile} {
-            font-size: 16px;
             width: 80%;
         }
     }
@@ -41,6 +40,10 @@
     &__order-worshop {
         @extend %title-action;
         padding: 4% 0 0 0;
+
+        @media #{ $tablet} {
+            font-size: 40px;
+        }
 
         @media #{$mobile} {
             font-size: 32px;
@@ -52,6 +55,10 @@
     &__order-name {
         @extend %title-action;
         padding: 8% 0 0 0;
+
+        @media #{ $tablet} {
+            font-size: 43px;
+        }
 
         @media #{$mobile} {
             font-size: 32px;
@@ -68,6 +75,10 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
         font-weight: 700;
+
+        @media #{$tablet} {
+            padding: 18px 85px 18px 85px;
+        }
 
         @media #{$mobile} {
             margin-bottom: 20%;
