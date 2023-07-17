@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Tenor+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-.title, .textonbcg {
+.textonbcg, .title {
   font-family: "Tenor Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -19,7 +19,7 @@
   font-size: 48px;
 }
 @media screen and (max-width: 599px) {
-  .title, .textonbcg {
+  .textonbcg, .title {
     font-size: 32px;
   }
 }
@@ -36,47 +36,48 @@
   border: none;
 }
 
+.common-container {
+  width: 100%;
+}
+
 .button {
   font-size: 1rem;
   font-weight: bold;
-  height: 5vh;
+  background-color: aliceblue;
+  text-decoration: none;
+}
+
+.textonbcg {
+  color: aliceblue;
 }
 
 .block-workshops {
   width: 100%;
+  margin-bottom: 4%;
 }
 .block-workshops__button {
   color: #4C6D77;
   padding: 0 4% 0 4%;
 }
 .block-workshops__trustus {
-  height: 55vh;
+  height: 59vh;
   padding-top: 8%;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   flex-direction: column;
-  background: url("/assets/img/images_workshop/BCGTheyTrustUs.png");
-  z-index: 0;
+  background-image: url("/assets/img/images_workshop/BCGTheyTrustUs.png");
+  background-repeat: no-repeat;
 }
 
-.common-container {
-  font-size: 48px;
+.block-ourworks {
+  margin-bottom: 4%;
+  width: 1160px;
+  margin: 0 auto;
 }
-
-.textonbcg {
-  font-size: 1em;
-  color: aliceblue;
-}
-@media screen and (max-width: 599px) {
-  .textonbcg {
-    font-size: 0.5em;
-  }
-}
-
 .block-ourworks__button {
   background-color: #A1B29F;
-  color: aliceblue;
+  color: rgb(252, 252, 252);
   padding: 0 4% 0 4%;
   margin-bottom: 5%;
   font-weight: 700;
@@ -89,9 +90,7 @@
 }
 .block-ourworks__title {
   padding-top: 4%;
-  padding-left: 15%;
-  margin-bottom: 4%;
-  font-size: 1em;
+  margin-bottom: 7%;
 }
 @media screen and (max-width: 599px) {
   .block-ourworks__title {
@@ -123,4 +122,54 @@
   padding-top: 4%;
   display: flex;
   justify-content: center;
+}
+
+.block-what-technics {
+  margin-bottom: 3%;
+  width: 1160px;
+  margin: 0 auto;
+}
+.block-what-technics__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.block-what-technics__items {
+  width: 50%;
+  display: flex;
+  justify-items: center;
+  align-self: center;
+  flex-direction: column;
+}
+.block-what-technics__no-item {
+  padding: 30px;
+  background: url("/assets/img/images_workshop/Ellipce.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+.block-what-technics__item {
+  padding-top: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.block-what-technics__title {
+  margin-bottom: 4%;
+}
+.block-what-technics__subtitle {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 5%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
 }/*# sourceMappingURL=workshop.css.map */
