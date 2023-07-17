@@ -52,6 +52,11 @@ header {
     width: 300px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    width: 600px;
+  }
+}
 
 .text {
   font-size: 18px;
@@ -96,18 +101,22 @@ body {
   }
 }
 .main__brand-meaning-block {
+  padding: 0 20px;
   margin-bottom: 160px;
 }
 @media screen and (max-width: 599px) {
   .main__brand-meaning-block {
+    padding: 0;
     margin-bottom: 90px;
   }
 }
 .main__products-block {
+  padding: 0 20px;
   margin-bottom: 160px;
 }
 @media screen and (max-width: 599px) {
   .main__products-block {
+    padding: 0;
     margin-bottom: 90px;
   }
 }
@@ -120,10 +129,12 @@ body {
   }
 }
 .main__video-block {
+  padding: 0 20px;
   margin-bottom: 200px;
 }
 @media screen and (max-width: 599px) {
   .main__video-block {
+    padding: 0;
     margin-bottom: 155px;
   }
 }
@@ -146,7 +157,6 @@ body {
 
 .front-block {
   display: flex;
-  height: 776.3px;
   border-top: solid 1px #000;
   border-bottom: solid 1px #000;
 }
@@ -156,8 +166,14 @@ body {
     flex-direction: column-reverse;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .front-block {
+    flex-direction: column-reverse;
+    border: none;
+  }
+}
 .front-block__img {
-  width: 719px;
+  max-width: 719px;
 }
 @media screen and (max-width: 599px) {
   .front-block__img {
@@ -247,6 +263,12 @@ body {
     gap: 40.5px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .brand-meaning__definitions {
+    flex-direction: column;
+    gap: 40.5px;
+  }
+}
 .brand-meaning__item {
   display: flex;
   flex-flow: column;
@@ -281,7 +303,7 @@ body {
   }
 }
 .our-products__cards {
-  width: 1160px;
+  max-width: 1160px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border: 1px solid #000;
@@ -289,6 +311,13 @@ body {
 @media screen and (max-width: 599px) {
   .our-products__cards {
     width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .our-products__cards {
+    width: 500px;
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
   }
@@ -336,6 +365,11 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .family__content {
+    flex-direction: column;
+  }
+}
 .family__img {
   max-width: 704px;
 }
@@ -356,8 +390,13 @@ body {
     padding: 60px 0 0 35px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .family__info {
+    background: none;
+  }
+}
 .family__article {
-  width: 515px;
+  max-width: 515px;
 }
 @media screen and (max-width: 599px) {
   .family__article {
@@ -398,6 +437,13 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .video__video {
+    width: 500px;
+    height: 301px;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 599px) {
   .our-services {
@@ -415,7 +461,7 @@ body {
   }
 }
 .our-services__content {
-  height: 1073px;
+  min-height: 1073px;
 }
 .our-services__order-info {
   padding: 110px 0 100px 41px;
@@ -428,6 +474,7 @@ body {
   }
 }
 .our-services__order-text {
+  max-width: 539px;
   margin-bottom: 55px;
   color: #000;
 }
@@ -438,7 +485,7 @@ body {
   }
 }
 .our-services__workshop-info {
-  padding: 110px 140px 115px 38px;
+  padding: 110px 0 115px 38px;
   flex-grow: 1;
   background: #D4CDC3;
 }
@@ -448,7 +495,7 @@ body {
   }
 }
 .our-services__workshop-text {
-  width: 534px;
+  max-width: 534px;
   margin-bottom: 55px;
   color: #000;
 }
@@ -463,6 +510,11 @@ body {
   display: flex;
 }
 @media screen and (max-width: 599px) {
+  .twins-block {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   .twins-block {
     flex-direction: column;
   }
