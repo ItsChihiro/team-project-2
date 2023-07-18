@@ -153,6 +153,14 @@
 .portfolio {
     margin-left: 12%;
     margin-bottom: 10%;
+
+        @media #{$tablet} {
+            margin-left: 5%;
+        }
+
+        @media #{$mobile} {
+            margin-left: 5%;
+        }
     &__container{
     }
 
@@ -175,9 +183,7 @@
 
     &__photo {
         max-width: 890px;
-        // min-height: 700px;
         @media #{$tablet} {
-            max-width: 690px;
         }
 
         @media #{$mobile} {
@@ -186,14 +192,18 @@
 
     &__photo-container {
         // transition: transform .8s ease;
-        // max-width: 100%;
         max-width: 900px;
 
+        @media screen and (max-width: 1440px) {
+            max-width: 743px;
+        }
+
         @media #{$tablet} {
-            // max-width: 800px;
+            max-width: 570px;
         }
 
         @media #{$mobile} {
+            max-width: 316px;
         }
     }
 
@@ -204,13 +214,19 @@
         margin: 0 auto;
         // max-width: 100%;
 
+        @media screen and (max-width: 1440px) {
+            height: 684px;
+        }
+
         @media #{$tablet} {
+            height: 493px;
         }
 
         @media #{$mobile} {
+            height: 281px;
         }
     }
-    }
+    
 
     &__next {
         width: 10%;
@@ -223,12 +239,16 @@
         width: 50px;
         height: 50px;
         cursor: pointer;
-    }
 
-    #prev {
-    }
+        @media #{$tablet} {
+            width: 40px;
+            height: 40px;
+        }
 
-    #next {
+        @media #{$mobile} {
+            width: 20px;
+        height: 20px;
+        }
     }
 
     #next.disable,
