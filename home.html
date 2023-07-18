@@ -26,7 +26,7 @@
                         Изготовление и реставрация мебели
                     </h2>
                     <p class="text">Авторская мебель ручной работы, сделанная с душой и трепетом.</p>
-                    <a href="#" class="front-block__button button">Смотреть услуги</a>
+                    <a href="#services" class="front-block__button button">Смотреть услуги</a>
 
                     <div class="front-block__media">
                         <a href="#" class="telegram">
@@ -159,8 +159,7 @@
             <div class="video">
                 <h5 class="video__title title">Посмотрите видео о нас</h5>
 
-                <iframe width="1160" height="700" src="https://www.youtube.com/embed/MlaGpRXoMPc"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/MlaGpRXoMPc" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen class="video__video">
                 </iframe>
@@ -170,11 +169,15 @@
 
         <div class="main__our-services-block">
             <div class="our-services">
+                <a name="services"></a>
                 <h5 class="our-services__title title">Наши услуги</h5>
 
                 <div class="our-services__content">
                     <div class="our-services__order twins-block">
-                        <img src="./assets/img/home_images/services-img1.png" alt="Тумба для ванной">
+                        <div class="our-services__img-wrapper">
+                            <img src="./assets/img/home_images/services-img1.png" alt="Тумба для ванной"
+                                class="our-services__img">
+                        </div>
 
                         <div class="our-services__order-info">
                             <article class="our-services__order-article">
@@ -193,8 +196,10 @@
                     </div>
 
                     <div class="our-services__workshop twins-block">
-                        <img src="./assets/img/home_images/services-img2.png"
-                            alt="Мебель, сделанная на мастер-классах по реставрации">
+                        <div class="our-services__img-wrapper">
+                            <img src="./assets/img/home_images/services-img2.png"
+                                alt="Мебель, сделанная на мастер-классах по реставрации" class="our-services__img">
+                        </div>
 
                         <div class="our-services__workshop-info">
                             <article class="our-services__workshop-article">
