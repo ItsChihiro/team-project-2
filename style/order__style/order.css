@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 
-.choose-us__title-text {
+.portfolio__title-text, .choose-us__title-text {
   font-family: "Tenor Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -23,7 +23,7 @@ body {
   font-size: 48px;
 }
 @media screen and (max-width: 599px) {
-  .choose-us__title-text {
+  .portfolio__title-text, .choose-us__title-text {
     font-size: 32px;
   }
 }
@@ -184,4 +184,52 @@ body {
 .choose-us__block-text {
   width: 80%;
   font-size: 16px;
+}
+
+.portfolio {
+  margin-left: 12%;
+  margin-bottom: 10%;
+}
+.portfolio__title {
+  margin-bottom: 9%;
+}
+.portfolio__work {
+  display: flex;
+  align-items: center;
+}
+.portfolio__prev {
+  width: 10%;
+}
+.portfolio__photo {
+  max-width: 890px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .portfolio__photo {
+    max-width: 690px;
+  }
+}
+.portfolio__photo-container {
+  max-width: 900px;
+}
+.portfolio__photo-img {
+  border-radius: 10%;
+  width: 100%;
+  height: 760px;
+  margin: 0 auto;
+}
+.portfolio__next {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolio #prev,
+.portfolio #next {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.portfolio #next.disable,
+.portfolio #prev.disable {
+  pointer-events: none;
+  opacity: 0.5;
 }/*# sourceMappingURL=order.css.map */
