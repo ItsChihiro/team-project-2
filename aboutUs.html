@@ -1,55 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О нас</title>
-    <link rel="stylesheet" href="./style/normilize/normilize.css">
-    <link rel="stylesheet" href="./style/aboutUs_style/aboutUs.css">
-    <link rel="stylesheet" href="./style/header_style/header.css">
-</head>
+    <link rel="stylesheet" href="./style/normilize/normilize.css" />
+    <link rel="stylesheet" href="./style/aboutUs_style/aboutUs.css" />
+    <link rel="stylesheet" href="./style/header_style/header.css" />
+    <link rel="stylesheet" href="./style/footer_style/footer.css" />
+  </head>
 
-<body>
+  <body>
+    <header></header>
     <header class="header">
-        <div class="header__container container">
-          <div class="header__wrapper">
-            <nav class="header__nav">
-              <ul class="header__items">
-                <li class="header__item">
-                  <a href="#" class="header__nav-link">Мастер-классы</a>
-                </li>
-                <li class="header__item">
-                  <a href="#" class="header__nav-link">Мебель на заказ</a>
-                </li>
-                <div class="header__logo"><img src="./assets/img/logo.png" alt="logo"></div>
-                <li class="header__item">
-                  <a href="#" class="header__nav-link">Контакты</a>
-                </li>
-                <li class="header__item">
-                  <a href="#" class="header__nav-link">О нас</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__burger">
-              <img src="./assets/img/burger.svg" alt="burger" class="header__burger-img" >
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__items">
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-link">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-link">Мебель на заказ</a>
+                        </li>
+                        <li class="header__logo">
+                            <a href="./home.html"><img src="./assets/img/logo.png" alt="logo"></a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-link">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__burger">
+                    <img src="./assets/img/burger.svg" alt="burger" class="header__burger-img">
+                </div>
             </div>
+        </div>
+    </header>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        <h2 class="main__title">История создания мастерской</h2>
+        <h2 class="main__title">NIKASON BRAND</h2>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer_item col-md-3">
+            <ul class="footer_list">
+              <li class="footer_list__item">
+                <a href="#" class="fooetr_list__itemLink">
+                  ИП Колодезников-Матчитов Н.И. ИНН 143515646663
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_item col-md-2">
+            <ul class="footer_list">
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLink underline">
+                  Мастер-классы
+                </a>
+              </li>
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLink underline">
+                  Мебель на заказ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_item col-md-2">
+            <ul class="footer_list">
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLink underline">
+                  Контакты
+                </a>
+              </li>
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLin underline"> О нас </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_item col-md-3">
+            <ul class="footer_list">
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLink underline">
+                  Политика кофиденциальности
+                </a>
+              </li>
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLink underline">
+                  Договор оферты
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer_item col-md-2">
+            <ul class="footer_list footer_list_logos">
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLink">
+                  <img src="./assets/img/icons_instagram.svg" alt="" />
+                </a>
+              </li>
+              <li class="footer_list__item">
+                <a href="#" class="footer_list__itemLink">
+                  <img src="./assets/img/icons_whatsapp.svg" alt="" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="header__line"><img src="./assets/img/Line.png" alt="line"></div>
-      </header>
-      
-      <main class="main">
-        <div class="main__container">
-          <h2 class="main__title">История создания мастерской</h2>
-          <h2 class="main__title">NIKASON BRAND</h2>
-        </div>
-      </main>
-
-                
-
-
-</body>
-
+      </div>
+    </footer>
+  </body>
 </html>

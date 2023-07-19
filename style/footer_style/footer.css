@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Open Sans";
   src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
@@ -21,4 +22,37 @@
 .container-main {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.body {
+  height: 100%;
+}
+
+.main {
+  padding: 30px;
+  flex: 1 1 auto;
+}
+
+.footer {
+  min-height: 100%;
+  background-color: #715B4B;
+  display: flex;
+  flex-direction: column;
+}
+.footer li поменять {
+  list-style: none;
+}
+.footer a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.footer .footer_list_logos {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer_item {
+  margin-top: 84px;
+}
+.footer .underline {
+  position: relative;
 }/*# sourceMappingURL=footer.css.map */

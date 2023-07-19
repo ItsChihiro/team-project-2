@@ -24,23 +24,56 @@
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
+  src: local("../assets/fonts/Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../assets/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tenor Sans";
+  src: url("../assets/fonts/Tenor_Sans/TenorSans.eot");
+  src: local("../assets/fonts/Tenor_Sans/Tenor Sans"), local("../assets/fonts/Tenor_Sans/TenorSans"), url("../assets/fonts/Tenor_Sans/TenorSans.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Tenor_Sans/TenorSans.woff2") format("woff2"), url("../assets/fonts/Tenor_Sans/TenorSans.woff") format("woff"), url("../assets/fonts/Tenor_Sans/TenorSans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #F3EFEA;
-}
-
-.container {
-  width: 1160px;
+.container-main {
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .header {
   width: 100%;
+  border-bottom: solid 1px #000;
+}
+@media screen and (max-width: 599px) {
+  .header {
+    border-bottom: none;
+  }
+}
+.header__container {
+  max-width: 1190px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  .header__container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .header__container {
+    width: 100%;
+  }
 }
 .header__wrapper {
   display: flex;
@@ -48,24 +81,38 @@ body {
   align-items: center;
   min-height: 136px;
 }
-.header .header__nav {
+.header__nav {
   max-width: 1197px;
   width: 100%;
 }
-.header .header__nav .header__items {
+.header__items {
   list-style: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header__nav .header__items a {
+@media screen and (max-width: 599px) {
+  .header__items {
+    display: none;
+  }
+}
+.header__nav-link {
   text-decoration: none;
   color: #323232;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
-.header .header__nav .header__items .header__logo {
+.header__logo {
   width: 87px;
   height: 86px;
+}
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  .header__burger {
+    display: block;
+    margin-right: 22px;
+  }
 }/*# sourceMappingURL=header.css.map */

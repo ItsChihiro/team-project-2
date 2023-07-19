@@ -34,5 +34,10 @@
 
 .main {
   width: 100%;
-  max-width: 1197px;
+  flex: 1 1 auto;
+}
+.main__title {
+  color: #57463A;
+  position: relative;
+  text-align: center;
 }/*# sourceMappingURL=aboutUs.css.map */
