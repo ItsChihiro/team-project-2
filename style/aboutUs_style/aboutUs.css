@@ -23,21 +23,26 @@
   margin: 0 auto;
 }
 
-.header {
-  width: 100%;
-}
-.header__line {
-  width: 1440px;
-  height: 0px;
-  flex-shrink: 0;
-}
-
 .main {
-  width: 100%;
-  flex: 1 1 auto;
+  position: relative;
+}
+.main__container {
+  position: relative;
+  width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 120px 0 160px;
+}
+@media screen and (max-width: 599px) {
+  .main {
+    padding: 130px 0 90px;
+  }
 }
 .main__title {
   color: #57463A;
-  position: relative;
+  font-family: Tenor Sans;
+  max-width: 734px;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=aboutUs.css.map */
