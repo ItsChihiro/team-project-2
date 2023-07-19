@@ -23,10 +23,10 @@
   margin: 0 auto;
 }
 
-.main {
+.history {
   position: relative;
 }
-.main__container {
+.history__content {
   position: relative;
   width: 1440px;
   left: 50%;
@@ -34,16 +34,46 @@
   padding: 120px 150px 160px;
 }
 @media screen and (max-width: 599px) {
-  .main {
+  .history {
     padding: 130px 0 90px;
   }
 }
-.main__title {
+.history__title {
   color: #57463A;
   font-family: Tenor Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
   max-width: 734px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 40px;
   padding-left: 120px;
+}
+.history__pic {
+  width: 1160px;
+  height: 536px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+.history__row {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.history__item {
+  font-family: Tenor Sans;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.history__item-title {
+  color: #57463A;
+  font-size: 48px;
+}
+.history__item-text {
+  font-family: Open Sans;
+  font-size: 16px;
 }/*# sourceMappingURL=aboutUs.css.map */
