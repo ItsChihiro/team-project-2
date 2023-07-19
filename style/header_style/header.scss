@@ -1,1 +1,57 @@
 @import "../template";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap');
+
+$background: #F3EFEA;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 136px;
+  }
+
+  .header__nav {
+    max-width: 1197px;
+    width: 100%;
+
+    .header__items {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: #323232;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .header__logo {
+        width: 87px;
+        height: 86px;
+      }
+
+    }
+  }
+}

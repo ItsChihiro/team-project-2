@@ -14,4 +14,18 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+}
+.header__line {
+  width: 1440px;
+  height: 0px;
+  flex-shrink: 0;
+}
+
+.main {
+  width: 100%;
+  max-width: 1197px;
 }/*# sourceMappingURL=aboutUs.css.map */
