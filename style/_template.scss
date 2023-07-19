@@ -20,6 +20,10 @@ $brown_line: #715B4B;
     box-sizing: border-box;
 }
 
+body {
+    background-color: $background;
+}
+
 .container-main {
     max-width: 1440px;
     width: 100%;
@@ -39,6 +43,13 @@ $brown_line: #715B4B;
     }
 }
 
+%title-action {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: $light_btn_text;
+}
+
 %text {
     font-family: 'Open Sans', sans-serif;
     color: #323232;
@@ -47,12 +58,20 @@ $brown_line: #715B4B;
     line-height: 150%;
 }
 
+%text-two {
+    font-family: 'Open Sans', sans-serif;
+    color: #323232;
+    // font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
 %img-subtitle {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     color: #323232;
-    font-size: 18px;
+    // font-size: 18px;
 }
 
 %button {
