@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "sources": [
-        "../_fonts.scss",
-        "../_template.scss",
-        "aboutUs.css"
-    ],
-    "names": [],
-    "mappings": "AAAQ,yGAAA;ACgBR;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ACdJ;;ADiBA;EACI,iBAAA;EACA,WAAA;EACA,cAAA;ACdJ",
-    "file": "aboutUs.css"
-}
+{"version":3,"sources":["../_fonts.scss","../_template.scss","aboutUs.css","aboutUs.scss"],"names":[],"mappings":"AAAQ,6GAAA;AACA,yGAAA;ACeR;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ACbJ;;ADgBA;EACI,yBAfS;ACEb;;ADgBA;EACI,iBAAA;EACA,WAAA;EACA,cAAA;ACbJ;;ACdA;EACE,WAAA;ADiBF;ACfE;EACE,aAAA;EACA,WAAA;EACA,cAAA;ADiBJ;;ACbA;EACE,WAAA;EACA,iBAAA;ADgBF","file":"aboutUs.css"}
