@@ -32,6 +32,11 @@
         background-size: cover;
     }
 
+    .block {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     &__container {
         min-height: 639px;
         display: flex;
@@ -110,12 +115,9 @@
 }
 
 .choose-us {
-    margin-left: 12%;
-    // max-width: 1160px;
-    // margin: 0 auto;
+    margin-bottom: 10%;
     &__container {
         padding-top: 10%;
-        margin-bottom: 10%;
     }
 
     &__title {
@@ -139,18 +141,26 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-right: 12%;
+        // margin-right: 12%;
+
+        max-width: 1160px;
+        width: 100%;
     }
 
     &__info-block {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 280px;
+        width: 382px;
         margin-bottom: 5%;
+
+        @media #{$tablet} {
+            margin-bottom: 10%;
+        }
 
         @media #{$mobile} {
             margin-bottom: 20%;
+            width: 280px;
         }
     }
 
@@ -175,7 +185,7 @@
 }
 
 .portfolio {
-    margin-left: 12%;
+    // margin-left: 12%;
     margin-bottom: 10%;
 
     &__container{
@@ -201,6 +211,16 @@
     &__work {
         display: flex;
         align-items: center;
+        max-width: 1160px;
+        width: 100%;
+
+        @media #{$tablet} {
+            justify-content: center;
+        }
+
+        @media #{$mobile} {
+            justify-content: center;
+        }
     }
 
     &__prev {
@@ -237,11 +257,10 @@
         border-radius: 10%;
         width: 100%;
         height: 760px;
-        margin: 0 auto;
-        // max-width: 100%;
+        margin: 0 auto;;
 
         @media screen and (max-width: 1440px) {
-            height: 684px;
+            height: 591px;
         }
 
         @media #{$tablet} {
@@ -252,7 +271,6 @@
             height: 281px;
         }
     }
-    
 
     &__next {
         width: 10%;
@@ -340,5 +358,150 @@
         height: 48px;
         display: flex;
         align-items: flex-end
+    }
+}
+
+.client {
+    &__title {
+        margin-bottom: 5%;
+    }
+
+    &__title-text {
+        @extend %title;
+
+        @media #{$tablet} {
+            font-size: 38px;
+        }
+
+        @media #{$mobile} {
+            padding-top: 20%;
+            padding-bottom: 7%;
+        }
+    }
+
+    &__reviews {
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    &__reviews-container {
+        padding: 0 10vw;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    &__reviews-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__reviews-card {
+        flex: 0 0 auto;
+        // width: 250px;
+        width: 353px;
+        height: 450px;
+        margin-right: 40px;
+    }
+
+    &__reviews-img {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    &__reviews-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__reviews-card:hover {
+        opacity: 1;
+    }
+
+    &__reviews-pre,
+    &__reviews-nxt {
+        border: none;
+        width: 10vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0), $background);
+        cursor: pointer;
+        z-index: 9;
+    }
+
+    &__reviews-pre {
+        left: 0;
+    }
+
+    &__reviews-nxt {
+        right: 0;
+    }
+
+    .pre-img,
+    .nxt-img {
+        opacity: 0.2;
+        width: 60px;
+        height: 60px;
+    }
+
+    .pre-img:hover,
+    .nxt-img:hover {
+        opacity: 1;
+    }
+
+    // НЕ НАШЛА ЭТИ КЛАССЫ
+
+    .collection-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .collection {
+        position: relative;
+    }
+
+    .collection img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .collection:nth-child(3) {
+        grid-column: span 2;
+        margin-bottom: 10px;
+    }
+}
+
+.application {
+    &__title {
+        margin-bottom: 5%;
+    }
+
+    &__title-text {
+        @extend %title;
+
+        @media #{$tablet} {
+            font-size: 38px;
+        }
+
+        @media #{$mobile} {
+            padding-top: 20%;
+            padding-bottom: 7%;
+        }
+    }
+
+    &__btn {}
+
+    &__btn-text {
+        cursor: pointer;
     }
 }
