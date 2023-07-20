@@ -55,6 +55,11 @@ body {
   align-items: center;
   min-height: 136px;
 }
+@media screen and (max-width: 599px) {
+  .header__wrapper {
+    min-height: 50px;
+  }
+}
 .header__nav {
   max-width: 1197px;
   width: 100%;
@@ -86,5 +91,6 @@ body {
   .header__burger {
     display: block;
     margin-right: 22px;
+    margin-top: 34px;
   }
 }/*# sourceMappingURL=header.css.map */

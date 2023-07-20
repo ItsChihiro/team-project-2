@@ -273,6 +273,7 @@ body {
   .brand-meaning__definitions {
     flex-direction: column;
     gap: 40.5px;
+    align-items: center;
   }
 }
 .brand-meaning__item {
@@ -360,12 +361,10 @@ body {
 
 .family__title {
   margin-bottom: 100px;
-  padding-left: 140px;
 }
 @media screen and (max-width: 599px) {
   .family__title {
     margin-bottom: 60px;
-    padding-left: 35px;
   }
 }
 .family__content {
@@ -393,6 +392,7 @@ body {
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .family__img {
+    max-width: none;
     width: 100%;
     margin: 0 auto;
   }
@@ -473,19 +473,12 @@ body {
   }
 }
 
-@media screen and (max-width: 599px) {
-  .our-services {
-    min-height: 1949px;
-  }
-}
 .our-services__title {
   margin-bottom: 100px;
-  padding-left: 140px;
 }
 @media screen and (max-width: 599px) {
   .our-services__title {
     margin-bottom: 51px;
-    padding-left: 35px;
   }
 }
 .our-services__order-info {
