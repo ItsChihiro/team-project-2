@@ -123,7 +123,11 @@
     border-bottom: solid 1px #000;
 
     @media #{$mobile} {
-        // height: 932px;
+        flex-direction: column-reverse;
+        border: none;
+    }
+
+    @media screen and (max-width:1160px) {
         flex-direction: column-reverse;
         border: none;
     }
@@ -137,19 +141,18 @@
         max-width: 719px;
         width: 100%;
 
-        @media #{$tablet} {
-            max-width: 1023px;
-            width: 100%;
+        @media screen and (max-width:1160px) {
+            max-width: 1160px;
         }
 
-        @media #{$mobile} {
-            width: 100%;
+        @media #{$tablet} {
+            max-width: 1023px;
         }
     }
 
     &__info {
         display: flex;
-        flex-grow: 1;
+        flex-basis: 50%;
         flex-direction: column;
         padding: 198.5px 37px 37px 37px;
 
@@ -525,8 +528,6 @@
 
 
 .quality-assurance {
-    // width: 1160px;
-    // height: 590px;
     border: 7px solid $green;
     padding: 6.5px 5.5px;
 
