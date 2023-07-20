@@ -3,6 +3,27 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media screen and (min-width: 1023px) and (max-width: 1170px) {
+        max-width: 800px;
+        // padding: 0 12px;
+    }
+
+    @media #{$tablet} {
+        max-width: 600px;
+        padding: 0 10px;
+    }
+
+    @media #{$mobile} {
+        max-width: 370px;
+        padding: 0 10px;
+    }
+}
+
 
 .main {
     &__order {
@@ -75,6 +96,7 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
         font-weight: 700;
+        text-decoration: none;
 
         @media #{$tablet} {
             padding: 18px 85px 18px 85px;
@@ -89,6 +111,8 @@
 
 .choose-us {
     margin-left: 12%;
+    // max-width: 1160px;
+    // margin: 0 auto;
     &__container {
         padding-top: 10%;
         margin-bottom: 10%;
@@ -154,13 +178,6 @@
     margin-left: 12%;
     margin-bottom: 10%;
 
-        @media #{$tablet} {
-            margin-left: 5%;
-        }
-
-        @media #{$mobile} {
-            margin-left: 5%;
-        }
     &__container{
     }
 
@@ -170,6 +187,15 @@
 
     &__title-text {
         @extend %title;
+
+        @media #{$tablet} {
+            font-size: 38px;
+        }
+
+        @media #{$mobile} {
+            padding-top: 20%;
+            padding-bottom: 7%;
+        }
     }
 
     &__work {
@@ -255,5 +281,64 @@
     #prev.disable {
         pointer-events: none;
         opacity: 0.5;
+    }
+}
+
+.stages {
+    margin-bottom: 10%;
+
+    &__container{}
+
+    &__title {
+        margin-bottom: 9%;
+    }
+
+    &__title-text {
+        @extend %title;
+
+        @media #{$tablet} {
+            font-size: 38px;
+        }
+
+        @media #{$mobile} {
+            padding-top: 20%;
+            padding-bottom: 7%;
+        }
+    }
+
+    &__numbers {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1160px;
+        width: 100%;
+
+        @media #{$tablet} {}
+
+        @media #{$mobile} {
+            justify-content: center;
+        }
+    }
+
+    &__number-block {
+        width: 382px;
+        padding: 10px 40px 30px 40px;
+        border: 1px solid #000;
+
+        @media #{$mobile} {
+            width: 280px;
+        }
+    }
+
+    &__number-figure {
+        @extend %title;
+        display: flex;
+        justify-content: flex-end
+    }
+
+    &__number-text {
+        @extend %text;
+        height: 48px;
+        display: flex;
+        align-items: flex-end
     }
 }

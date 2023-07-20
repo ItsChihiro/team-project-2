@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,15 +15,16 @@ body {
   margin: 0 auto;
 }
 
-.portfolio__title-text, .choose-us__title-text {
+.stages__number-figure, .stages__title-text, .portfolio__title-text, .choose-us__title-text {
   font-family: "Tenor Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #57463A;
   font-size: 48px;
+  line-height: 120%;
 }
 @media screen and (max-width: 599px) {
-  .portfolio__title-text, .choose-us__title-text {
+  .stages__number-figure, .stages__title-text, .portfolio__title-text, .choose-us__title-text {
     font-size: 32px;
   }
 }
@@ -32,6 +34,14 @@ body {
   font-size: 48px;
   font-weight: 400;
   color: #F6F6F6;
+}
+
+.stages__number-text, .main__button {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
 }
 
 .choose-us__block-text {
@@ -49,7 +59,33 @@ body {
 }
 
 .main__button {
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 16px;
   cursor: pointer;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1023px) and (max-width: 1170px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    max-width: 600px;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .container {
+    max-width: 370px;
+    padding: 0 10px;
+  }
 }
 
 .main__order {
@@ -118,6 +154,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  text-decoration: none;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .main__button {
@@ -189,18 +226,19 @@ body {
   margin-left: 12%;
   margin-bottom: 10%;
 }
+.portfolio__title {
+  margin-bottom: 9%;
+}
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  .portfolio {
-    margin-left: 5%;
+  .portfolio__title-text {
+    font-size: 38px;
   }
 }
 @media screen and (max-width: 599px) {
-  .portfolio {
-    margin-left: 5%;
+  .portfolio__title-text {
+    padding-top: 20%;
+    padding-bottom: 7%;
   }
-}
-.portfolio__title {
-  margin-bottom: 9%;
 }
 .portfolio__work {
   display: flex;
@@ -280,4 +318,52 @@ body {
 .portfolio #prev.disable {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.stages {
+  margin-bottom: 10%;
+}
+.stages__title {
+  margin-bottom: 9%;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .stages__title-text {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .stages__title-text {
+    padding-top: 20%;
+    padding-bottom: 7%;
+  }
+}
+.stages__numbers {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1160px;
+  width: 100%;
+}
+@media screen and (max-width: 599px) {
+  .stages__numbers {
+    justify-content: center;
+  }
+}
+.stages__number-block {
+  width: 382px;
+  padding: 10px 40px 30px 40px;
+  border: 1px solid #000;
+}
+@media screen and (max-width: 599px) {
+  .stages__number-block {
+    width: 280px;
+  }
+}
+.stages__number-figure {
+  display: flex;
+  justify-content: flex-end;
+}
+.stages__number-text {
+  height: 48px;
+  display: flex;
+  align-items: flex-end;
 }/*# sourceMappingURL=order.css.map */
