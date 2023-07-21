@@ -46,7 +46,6 @@
 }
 .history__content {
   position: relative;
-  width: 1440px;
   left: 50%;
   transform: translateX(-50%);
   padding: 120px 150px 160px;
@@ -148,10 +147,11 @@
   padding: 100px 0 50px 160px;
 }
 .philosofi__subtitle {
+  font-family: Open Sans;
+  font-size: 24px;
   align-self: flex-end;
-  max-width: 650px;
+  width: 900px;
   text-align: right;
   color: #323232;
-  font-weight: 300;
-  padding-right: 10%;
+  padding-right: 13%;
 }/*# sourceMappingURL=aboutUs.css.map */
