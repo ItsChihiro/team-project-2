@@ -23,6 +23,24 @@
   margin: 0 auto;
 }
 
+.philosofi__title {
+  font-family: "Tenor Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #57463A;
+  font-size: 48px;
+}
+@media screen and (max-width: 599px) {
+  .philosofi__title {
+    font-size: 32px;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .history {
   position: relative;
 }
@@ -115,4 +133,25 @@
   text-align: justify;
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.philosofi {
+  position: relative;
+}
+.philosofi__content {
+  padding: 160px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.philosofi__title {
+  padding: 100px 0 50px 160px;
+}
+.philosofi__subtitle {
+  align-self: flex-end;
+  max-width: 650px;
+  text-align: right;
+  color: #323232;
+  font-weight: 300;
+  padding-right: 10%;
 }/*# sourceMappingURL=aboutUs.css.map */

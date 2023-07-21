@@ -1,6 +1,9 @@
 @import "../template";
 
-
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .history {
   position: relative; 
   &__content {
@@ -88,5 +91,27 @@
       font-size: 16px;
       margin-bottom: 30px;
     }
+}
+}
+.philosofi{
+  position: relative;
+  &__content{
+    padding: 160px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+&__title{
+ @extend %title;
+ padding: 100px 0 50px 160px;
+ 
+}
+&__subtitle{
+  align-self: flex-end;
+  max-width: 650px;
+  text-align: right;
+  color: #323232;
+  font-weight: 300;
+  padding-right: 10%;
 }
 }
