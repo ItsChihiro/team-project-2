@@ -6,12 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мебель на заказ</title>
+    <link rel="stylesheet" href="./style/header_style/header.css">
     <link rel="stylesheet" href="./style/normilize/normilize.css">
     <link rel="stylesheet" href="./style/order__style/order.css">
     <link rel="shortcut icon" href="./assets/img/template_images/Nikason-logo.svg" type="image/x-icon">
 </head>
+
 <body>
-    <header></header>
+    <header>
+        <div class="header__container container">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__items">
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-link">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-link">Мебель на заказ</a>
+                        </li>
+                        <li class="header__logo">
+                            <a href="./home.html"><img src="./assets/img/template_images/logo.svg" alt="logo" /></a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-link">О нас</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="header__items-mobile" id="mySidenav">
+                        <div class="header__closebtn" onclick="closeNav()">
+                            <img src="./assets/img/header_images/close-solid.svg" alt="burger"
+                            class="header__burger-closed" /></div>
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-mobile">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-mobile">Мебель на заказ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-mobile">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-mobile">О нас</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__burger">
+                        <button class="header__burger-btn" onclick="openNav()"><img src="./assets/img/header_images/burger.svg" alt="burger"
+                                class="header__burger-img" /></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <main class="main">
         <section class="main__order block">
             <div class="main__container">
@@ -21,7 +71,6 @@
                     <h3 class="main__order-name">NIKASON BRAND</h3>
                 </div>
                 <div class="main__order-btn">
-                    <!-- <button class="main__button">Заказать мебель</button> -->
                     <a href="" class="main__button">Заказать мебель</a>
                 </div>
             </div>
@@ -206,7 +255,9 @@
     </main>
     <footer></footer>
 
-    <script src="./script.js"></script>
+    <script src="./order.js"></script>
+    <script src="./header.js"></script>
 
 </body>
+
 </html>
