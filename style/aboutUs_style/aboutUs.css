@@ -76,4 +76,43 @@
 .history__item-text {
   font-family: Open Sans;
   font-size: 16px;
+}
+
+.founder {
+  margin: auto;
+  width: 1080px;
+  height: 312px;
+  justify-content: center;
+  position: relative;
+}
+.founder__content {
+  position: relative;
+  display: flex;
+}
+.founder__photo {
+  width: 460px;
+  height: 470px;
+}
+.founder-pic {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.founder__dscr {
+  padding: 0 0 0 40px;
+}
+.founder__dscr-title {
+  margin-bottom: 20px;
+  font-family: Tenor Sans;
+  font-size: 24px;
+}
+.founder__dscr-subtitle {
+  margin-bottom: 70px;
+  font-family: Open Sans;
+  font-size: 16px;
+}
+.founder__dscr-text {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=aboutUs.css.map */

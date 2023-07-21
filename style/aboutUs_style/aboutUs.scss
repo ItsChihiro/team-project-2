@@ -39,7 +39,6 @@
       padding: 0 15px;
       margin: 0 auto;
     }
-    
     &__item{
       font-family: Tenor Sans;
       text-align: center;
@@ -53,4 +52,41 @@
         font-size: 16px;
       }
     }
+}
+
+.founder{
+  margin: auto;
+  width: 1080px;
+  height: 312px;
+  justify-content: center;
+  position: relative;
+  &__content{
+    position: relative;
+    display: flex;
+  }
+  &__photo{
+    width: 460px;
+    height: 470px;}
+    &-pic{
+      height: 100%;
+      object-fit: cover;
+}
+&__dscr{
+  padding: 0 0 0 40px;
+  &-title{
+    margin-bottom: 20px;
+    font-family: Tenor Sans;
+    font-size: 24px;
+  }
+  &-subtitle {
+    margin-bottom: 70px;
+    font-family: Open Sans;
+    font-size: 16px;
+  }
+  &-text {
+      text-align: justify;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+}
 }
