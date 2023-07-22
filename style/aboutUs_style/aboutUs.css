@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 
-.philosofi__title {
+.application__title-text, .massmedia__title, .philosofi__title {
   font-family: "Tenor Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -31,7 +31,7 @@
   font-size: 48px;
 }
 @media screen and (max-width: 599px) {
-  .philosofi__title {
+  .application__title-text, .massmedia__title, .philosofi__title {
     font-size: 32px;
   }
 }
@@ -154,4 +154,67 @@
   text-align: right;
   color: #323232;
   padding-right: 13%;
+}
+
+.massmedia {
+  position: relative;
+}
+.massmedia__content {
+  padding: 0 0 160px 0;
+}
+.massmedia__title {
+  padding: 100px 0 0 160px;
+}
+.massmedia__subtitle {
+  font-family: Open Sans;
+  margin-bottom: 20px;
+  padding: 100px 0 0 160px;
+}
+.massmedia__slider {
+  display: flex;
+}
+.massmedia__swiper-slide {
+  text-align: center;
+}
+.massmedia__swiper-slide-pic {
+  display: flex;
+  max-width: 100%;
+}
+
+.application__title {
+  padding: 100px 0 0 160px;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .application__title-text {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .application__title-text {
+    padding-top: 20%;
+    padding-bottom: 7%;
+  }
+}
+.application__btn {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.application__btn-text {
+  cursor: pointer;
+  background-color: #A1B29F;
+  border: none;
+  color: #F6F6F6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 52px 18px 52px;
+}
+@media screen and (max-width: 599px) {
+  .application__btn-text {
+    padding: 18px 79px 18px 79px;
+  }
 }/*# sourceMappingURL=aboutUs.css.map */
