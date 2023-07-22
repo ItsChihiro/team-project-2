@@ -1,10 +1,297 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F3EFEA;
+}
+
 .container-main {
   margin: 0 auto;
+}
+
+.article-title, .title {
+  font-family: "Tenor Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #57463A;
+  font-size: 48px;
+  line-height: 120%;
+}
+@media screen and (max-width: 599px) {
+  .article-title, .title {
+    font-size: 32px;
+  }
+}
+
+.quality-assurance__text, .text-xs, .text, .button {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.button {
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.text-xs {
+  font-size: 16px;
+}
+
+.article-title {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 40px;
+  line-height: 150%;
+}
+
+.button {
+  width: 245px;
+  height: 60px;
+  background-color: #A1B29F;
+  color: #f6f6f6;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #678064;
+}
+
+body {
+  background-color: #F3EFEA;
+}
+
+.main__front-block {
+  margin-bottom: 160px;
+}
+.main__brand-meaning-block {
+  margin-bottom: 160px;
+}
+.main__products-block {
+  margin-bottom: 160px;
+}
+.main__family-block {
+  margin-bottom: 160px;
+}
+.main__video-block {
+  margin-bottom: 200px;
+}
+.main__our-services-block {
+  margin-bottom: 200px;
+}
+.main__qa-block {
+  margin-bottom: 210px;
+}
+
+.front-block {
+  display: flex;
+  height: 776.3px;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+}
+.front-block__img {
+  width: 719px;
+}
+.front-block__info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 198.5px 37px 37px 37px;
+}
+.front-block__title {
+  padding-top: 17px;
+  margin-bottom: 40px;
+  max-width: 514px;
+}
+.front-block__button {
+  margin-top: 70px;
+  margin-bottom: 94px;
+}
+.front-block__media {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-right: 103px;
+}
+.front-block__media-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.brand-meaning {
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+}
+.brand-meaning__title {
+  margin-bottom: 100px;
+}
+.brand-meaning__definitions {
+  display: flex;
+  justify-content: space-between;
+}
+.brand-meaning__item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 14px;
+}
+.brand-meaning__text {
+  width: 268px;
+  text-align: center;
+}
+.brand-meaning__line {
+  width: 360px;
+  border: solid 2px #715B4B;
+}
+
+.our-products {
+  height: 645px;
+}
+.our-products__title {
+  margin-bottom: 100px;
+}
+.our-products__cards {
+  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #000;
+}
+
+.card {
+  max-width: 290px;
+  min-height: 242px;
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.family__title {
+  margin-bottom: 100px;
+  padding-left: 140px;
+}
+.family__content {
+  display: flex;
+}
+.family__img {
+  width: 704px;
+}
+.family__info {
+  background: #EBEEEB;
+  padding: 68px 185px 48px 40px;
+  flex-grow: 1;
+}
+.family__article {
+  width: 515px;
+}
+.family__text {
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+
+.video {
+  height: 860px;
+}
+.video__title {
+  margin-bottom: 100px;
+}
+
+.our-services {
+  height: 1257px;
+}
+.our-services__title {
+  margin-bottom: 100px;
+  padding-left: 140px;
+}
+.our-services__content {
+  height: 1073px;
+}
+.our-services__order-info {
+  padding: 110px 140px 100px 41px;
+  flex-grow: 1;
+  background: #E3DACE;
+}
+.our-services__order-text {
+  margin-bottom: 55px;
+}
+.our-services__workshop-info {
+  padding: 110px 140px 100px 41px;
+  flex-grow: 1;
+  background: #D4CDC3;
+}
+.our-services__workshop-text {
+  margin-bottom: 55px;
+  width: 534px;
+}
+
+.twins-block {
+  display: flex;
+}
+
+.quality-assurance {
+  width: 1160px;
+  height: 590px;
+  border: 7px solid #A1B29F;
+}
+.quality-assurance__frame {
+  width: 1135px;
+  height: 563px;
+  margin: 6.5px 5.5px;
+  border: 1px solid #715B4B;
+  padding-top: 92px;
+}
+.quality-assurance__title {
+  width: 658px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-left: 258px;
+}
+.quality-assurance__text {
+  font-size: 24px;
+  color: #000;
+  width: 922px;
+  margin-left: 95px;
+}
+.quality-assurance__logo {
+  display: flex;
+  justify-content: flex-end;
+}
+.quality-assurance__logo-img {
+  margin-bottom: 38px;
+  margin-right: 68px;
 }/*# sourceMappingURL=home.css.map */

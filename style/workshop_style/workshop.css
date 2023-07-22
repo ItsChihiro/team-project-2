@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #F3EFEA;
 }
 
 .container-main {
@@ -16,6 +20,7 @@
   font-weight: 400;
   color: #57463A;
   font-size: 48px;
+  line-height: 120%;
 }
 @media screen and (max-width: 599px) {
   .block-workshops__textonbcg, .title {
@@ -23,14 +28,18 @@
   }
 }
 
-.button {
+.button, .button {
   font-family: "Open Sans", sans-serif;
   color: #323232;
   font-style: normal;
   font-weight: 300;
+  line-height: 150%;
 }
 
 .button {
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 16px;
   cursor: pointer;
   border: none;
 }

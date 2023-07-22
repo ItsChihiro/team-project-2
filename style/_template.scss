@@ -21,6 +21,10 @@ $grey_line: #F3EFEA;
     box-sizing: border-box;
 }
 
+body {
+    background-color: $background;
+}
+
 .container-main {
     // max-width: 1440px;
     margin: 0 auto;
@@ -32,10 +36,18 @@ $grey_line: #F3EFEA;
     font-weight: 400;
     color: #57463A;
     font-size: 48px;
+    line-height: 120%;
 
     @media #{$mobile} {
         font-size: 32px;
     }
+}
+
+%title-action {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: $light_btn_text;
 }
 
 %text {
@@ -44,6 +56,15 @@ $grey_line: #F3EFEA;
     // font-size: 18px;
     font-style: normal;
     font-weight: 300;
+    line-height: 150%;
+}
+
+%text-two {
+    font-family: 'Open Sans', sans-serif;
+    color: #323232;
+    // font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 %img-subtitle {
@@ -51,10 +72,14 @@ $grey_line: #F3EFEA;
     font-style: normal;
     font-weight: 700;
     color: #323232;
-    font-size: 18px;
+    // font-size: 18px;
 }
 
 %button {
+    border: none;
+    transition-duration: 0.4s;
+    @extend %text;
+    font-size: 16px;
     cursor: pointer;
     border: none;
 }
