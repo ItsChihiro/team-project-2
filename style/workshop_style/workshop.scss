@@ -1,4 +1,3 @@
-
 @import "../template";
 
 body {
@@ -101,44 +100,33 @@ body {
 .block-ourworks {
 
     margin-bottom: 5%;
+
     max-width: 1160px;
     margin: 0 auto;
 
     @media #{$mobile} {
         margin-bottom: 15%;
+        padding-top: 15%;
     }
 
-    &__button {
-        background-color: $green;
-        color: rgb(252, 252, 252);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 60px;
-        font-weight: bold;
-        text-decoration: none;
-        min-width: 328px;
-        margin: 0 40%;
-
-        @media #{$tablet} {
-            min-width: 318px;
-            margin: 0 20% 0 20%;
-        }
-
-        @media #{$mobile} {
-            min-width: 270px;
-            margin: 0 10% 0 10%;
-        }
+    @media #{$tablet} {
+        margin-bottom: 10%;
+        padding-top: 10%;
     }
+
 
     &__title {
         padding-top: 10%;
         margin-bottom: 7%;
+
         @media #{$mobile} {
+
             max-width: 80%;
             margin: 0 auto;
         }
+
         @media #{$tablet} {
+
             max-width: 81%;
             margin: 0 auto;
         }
@@ -170,18 +158,20 @@ body {
         row-gap: 30px;
 
         @media #{$tablet} {
-            max-width: 96%;
+            padding-top: 10%;
+            max-width: 98%;
             justify-content: center;
-            grid-template-columns: repeat(2, 40%);
+            grid-template-columns: repeat(2, 42%);
             grid-template-rows: repeat(4, 1fr);
             column-gap: 25px;
             row-gap: 22px;
         }
 
         @media #{$mobile} {
-            max-width: 96%;
+            padding-top: 10%;
+            max-width: 98%;
             justify-content: center;
-            grid-template-columns: repeat(2, 40%);
+            grid-template-columns: repeat(2, 42%);
             grid-template-rows: repeat(4, 1fr);
             column-gap: 15px;
             row-gap: 12px;
@@ -195,7 +185,30 @@ body {
         display: flex;
         justify-content: center;
     }
+    &__button {
+        background-color: $green;
+        color: rgb(252, 252, 252);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        font-weight: bold;
+        text-decoration: none;
+        min-width: 328px;
+        margin: 0 40%;
+
+        @media #{$tablet} {
+            min-width: 318px;
+            margin: 0 20% 0 20%;
+        }
+
+        @media #{$mobile} {
+            min-width: 270px;
+            margin: 0 10% 0 10%;
+        }
+    }
 }
+
 
 .block-what-technics {
     padding-top: 5%;
@@ -205,11 +218,17 @@ body {
 
     @media #{$mobile} {
         max-width: 80.5%;
+        margin-bottom: 15%;
+        padding-top: 15%;
     }
+
     @media #{$tablet} {
         max-width: 80.5%;
+        margin-bottom: 10%;
+        padding-top: 10%;
     }
-  &__title {
+
+    &__title {
         margin-bottom: 5%;
     }
 
@@ -277,7 +296,7 @@ body {
         align-items: center;
     }
 
-  
+
 
     &__subtitle {
         display: flex;
@@ -292,19 +311,94 @@ body {
 
 }
 
-.block-workshops-restoration {
+.block-presentsecondlife {
 
     margin-bottom: 5%;
-    max-width: 81%;
+    padding-top: 5%;
+
+    @media #{$mobile} {
+        margin-bottom: 15%;
+    }
+
+    @media #{$tablet} {
+        margin-bottom: 10%;
+        padding-top: 10%;
+    }
+
+    &__textonbcg {
+
+        @extend %title;
+        color: aliceblue;
+        margin: 0 23% 0 23%;
+
+
+        @media #{$mobile} {
+            margin: 3%;
+        }
+
+        @media #{$tablet} {
+            margin: 3%;
+        }
+    }
+
+    &__wrapper {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-image: url('/assets/img/images_workshop/bcg_boards.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media #{$mobile} {
+            height: 50vh;
+
+        }
+
+        @media #{$tablet} {
+            height: 50vh;
+
+        }
+    }
+}
+
+.block-workshops-restoration {
+
+    padding-top: 5%;
+    max-width: 1160px;
     margin: 0 auto;
 
     @media #{$mobile} {
+        max-width: 96%;
+        margin-bottom: 25%;
+        padding-top: 5%;
+    }
+
+    @media #{$tablet} {
+        max-width: 96%;
         margin-bottom: 10%;
+        padding-top: 5%;
     }
 
     &__title {
         padding-top: 4%;
         margin-bottom: 7%;
+
+        @media #{$mobile} {
+            padding-top: 0;
+            padding-bottom: 20%;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        @media #{$tablet} {
+            padding-top: 0;
+            padding-bottom: 10%;
+            max-width: 81%;
+            margin: 0 auto;
+        }
 
     }
 
@@ -319,19 +413,23 @@ body {
 
     &__subtitle {
         margin-top: 10%;
+        font-weight: bold;
     }
 
     &__wrapper {
         width: 100%;
+        margin: 0 auto;
         display: grid;
         justify-content: center;
-        align-items: self-end;
+        align-items: end;
         grid-template-columns: repeat(4, fit-content(25em));
         grid-template-rows: 1fr 1fr;
-        column-gap: 35px;
-        row-gap: 30px;
+        column-gap: 70px;
+        row-gap: 50px;
 
         @media #{$tablet} {
+            max-width: 96%;
+            justify-content: center;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(4, 1fr);
             column-gap: 25px;
@@ -339,15 +437,14 @@ body {
         }
 
         @media #{$mobile} {
+            max-width: 96%;
+            justify-content: center;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: repeat(4, 1fr);
+            column-gap: 15px;
+            row-gap: 12px;
         }
     }
 
-    &__wrapper-button {
 
-        padding-top: 4%;
-        display: flex;
-        justify-content: center;
-    }
 }
