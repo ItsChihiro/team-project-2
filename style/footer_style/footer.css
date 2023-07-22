@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-.footer, .footer__nav-link {
+.footer__nav-link, .footer {
   font-family: "Open Sans", sans-serif;
   color: #323232;
   font-style: normal;
@@ -26,11 +26,17 @@ body {
 
 .footer {
   width: 100%;
-  height: 380px;
+  min-height: 380px;
   background-color: #715B4B;
-  padding: 84px 10% 84px 10%;
+  padding: 84px 0;
   color: #F6F6F6;
   font-size: 16px;
+}
+@media screen and (max-width: 599px) {
+  .footer {
+    min-height: 700px;
+    padding: 40px 0;
+  }
 }
 .footer__container {
   max-width: 1190px;
@@ -38,20 +44,74 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (max-width: 599px) {
+  .footer__container {
+    max-width: 290px;
+    padding: 0 10px;
+    margin-left: 28px;
+  }
+}
 .footer__nav-link {
   color: #F6F6F6;
   font-size: 16px;
   text-decoration: none;
 }
-
-.footer-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  border: 1px solid #000;
+.footer__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.footer-items {
+@media screen and (max-width: 599px) {
+  .footer__row {
+    flex-direction: column;
+  }
+}
+.footer__column {
   display: flex;
   flex-direction: column;
   list-style: none;
+  max-width: 278px;
+  padding: 0px 10px;
+}
+@media screen and (max-width: 599px) {
+  .footer__column-one {
+    order: 5;
+  }
+}
+@media screen and (max-width: 599px) {
+  .footer__column-two {
+    order: 2;
+    gap: 9px;
+    margin-bottom: 9px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .footer__column-three {
+    order: 3;
+    margin-bottom: 53px;
+    gap: 9px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .footer__column-four {
+    order: 4;
+    margin-bottom: 53px;
+    gap: 9px;
+  }
+}
+.footer__media {
+  display: flex;
+  gap: 18px;
+}
+@media screen and (max-width: 599px) {
+  .footer__media {
+    order: 1;
+    margin-bottom: 111px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .footer__telegram {
+    display: none;
+  }
 }/*# sourceMappingURL=footer.css.map */
