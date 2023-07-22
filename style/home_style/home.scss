@@ -200,6 +200,14 @@
         }
     }
 
+    &__media-item {
+        transition: 0.5s;
+    }
+
+    &__media-item:hover {
+        transform: scale(1.2);
+    }
+
     &__media-icon {
         width: 30px;
         height: 30px;
@@ -211,7 +219,6 @@
         display: none;
     }
 }
-
 
 
 .brand-meaning {

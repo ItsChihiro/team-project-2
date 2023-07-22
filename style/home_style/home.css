@@ -238,6 +238,12 @@ body {
     justify-content: flex-start;
   }
 }
+.front-block__media-item {
+  transition: 0.5s;
+}
+.front-block__media-item:hover {
+  transform: scale(1.2);
+}
 .front-block__media-icon {
   width: 30px;
   height: 30px;
