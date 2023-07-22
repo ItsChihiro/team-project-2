@@ -383,18 +383,15 @@ body {
     }
 
     &__title {
-        padding-top: 4%;
         margin-bottom: 7%;
 
         @media #{$mobile} {
-            padding-top: 0;
             padding-bottom: 20%;
             max-width: 80%;
             margin: 0 auto;
         }
 
         @media #{$tablet} {
-            padding-top: 0;
             padding-bottom: 10%;
             max-width: 81%;
             margin: 0 auto;
