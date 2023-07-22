@@ -450,8 +450,20 @@
         }
 
         @media #{$mobile} {
-            width: 100%;
-            min-height: 226px;
+            display: none;
+        }
+    }
+
+    &__video-mobile {
+        width: 100%;
+        min-height: 56vw;
+
+        @media #{$tablet} {
+            display: none;
+        }
+
+        @media #{$desktop} {
+            display: none;
         }
     }
 }
@@ -540,7 +552,7 @@
 
     @media #{$mobile} {
         width: 298px;
-        height: 425px;
+        min-height: 425px;
         padding: 5.5px 5.5px;
         margin: 0 auto;
     }
@@ -619,6 +631,7 @@
             height: 68px;
             margin-top: 9px;
             margin-right: 7px;
+            margin-bottom: 60px;
         }
     }
 }
