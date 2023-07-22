@@ -50,9 +50,11 @@ body {
 
 .container-main {
   position: relative;
+  max-width: 1440px;
 }
 
 .block-workshops {
+  width: 100%;
   background: #F3EFEA;
   margin-bottom: 4%;
 }
