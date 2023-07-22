@@ -115,7 +115,7 @@
 }
 
 .choose-us {
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     &__container {
         padding-top: 10%;
     }
@@ -171,7 +171,7 @@
     }
 
     &__block-line {
-        width: 70%;
+        width: 50%;
         height: 1px;
         background-color: #715B4B;
         margin-bottom: 7%;
@@ -188,9 +188,6 @@
     // margin-left: 12%;
     margin-bottom: 10%;
 
-    &__container{
-    }
-
     &__title {
         margin-bottom: 9%;
     }
@@ -203,13 +200,14 @@
         }
 
         @media #{$mobile} {
-            padding-top: 20%;
+            padding-top: 8%;
             padding-bottom: 7%;
         }
     }
 
     &__work {
         display: flex;
+        justify-content: center;
         align-items: center;
         max-width: 1160px;
         width: 100%;
@@ -308,8 +306,6 @@
 
 .stages {
     margin-bottom: 10%;
-
-    &__container{}
 
     &__title {
         margin-bottom: 9%;
