@@ -410,6 +410,7 @@ body {
   position: relative;
   overflow: hidden;
   padding: 20px;
+  margin-bottom: 10%;
 }
 .client__reviews-container {
   padding: 0 10vw;
@@ -417,6 +418,11 @@ body {
   overflow-x: auto;
   scroll-behavior: smooth;
   width: 100%;
+}
+@media screen and (max-width: 599px) {
+  .client__reviews-container {
+    padding: 0 0;
+  }
 }
 .client__reviews-container::-webkit-scrollbar {
   display: none;
@@ -426,6 +432,14 @@ body {
   width: 353px;
   height: 450px;
   margin-right: 40px;
+}
+@media screen and (max-width: 599px) {
+  .client__reviews-card {
+    width: 320px;
+    height: 313px;
+    margin-right: 53px;
+    margin-left: 68px;
+  }
 }
 .client__reviews-img {
   position: relative;

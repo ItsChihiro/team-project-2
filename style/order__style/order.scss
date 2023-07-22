@@ -387,6 +387,7 @@
         position: relative;
         overflow: hidden;
         padding: 20px;
+        margin-bottom: 10%;
     }
 
     &__reviews-container {
@@ -395,6 +396,10 @@
         overflow-x: auto;
         scroll-behavior: smooth;
         width: 100%;
+
+        @media #{$mobile} {
+            padding: 0 0;
+        }
     }
 
     &__reviews-container::-webkit-scrollbar {
@@ -406,6 +411,13 @@
         width: 353px;
         height: 450px;
         margin-right: 40px;
+
+        @media #{$mobile} {
+            width: 320px;
+            height: 313px;
+            margin-right: 53px;
+            margin-left: 68px;
+        }
     }
 
     &__reviews-img {
@@ -465,30 +477,6 @@
     .nxt-img:hover {
         opacity: 1;
     }
-
-    // НЕ НАШЛА ЭТИ КЛАССЫ
-
-    // .collection-container {
-    //     width: 100%;
-    //     display: grid;
-    //     grid-template-columns: repeat(2, 1fr);
-    //     grid-gap: 10px;
-    // }
-
-    // .collection {
-    //     position: relative;
-    // }
-
-    // .collection .client__reviews-image {
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: cover;
-    // }
-
-    // .collection:nth-child(3) {
-    //     grid-column: span 2;
-    //     margin-bottom: 10px;
-    // }
 }
 
 .application {
