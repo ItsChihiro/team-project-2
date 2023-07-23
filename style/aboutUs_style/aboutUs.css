@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tenor+Sans&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@ body {
 .header {
   width: 100%;
 }
+
 .header__line {
   width: 1440px;
   height: 0px;
@@ -28,4 +30,6 @@ body {
 .main {
   width: 100%;
   max-width: 1197px;
-}/*# sourceMappingURL=aboutUs.css.map */
+}
+
+/*# sourceMappingURL=aboutUs.css.map */
