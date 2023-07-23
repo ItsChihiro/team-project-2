@@ -56,7 +56,7 @@
         display: flex;
         flex-direction: column;
         list-style: none;
-        max-width: 278px;
+        max-width: 282px;
         padding: 0px 10px;
 
         @media #{$tablet} {
@@ -72,6 +72,10 @@
         @media #{$mobile} {
             order: 5;
         }
+    }
+
+    &__ip-text {
+        width: 270px;
     }
 
     &__column-two {
