@@ -236,10 +236,6 @@
 
     &__photo {
         max-width: 890px;
-
-        @media #{$tablet} {}
-
-        @media #{$mobile} {}
     }
 
     &__photo-container {
@@ -263,7 +259,6 @@
         width: 800px;
         height: 760px;
         margin: 0 auto;
-        ;
 
         @media screen and (max-width: 1440px) {
             width: 600px;
