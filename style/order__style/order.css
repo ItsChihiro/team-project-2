@@ -173,6 +173,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+  margin-top: 20%;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .main__button {
@@ -182,6 +183,7 @@ body {
 @media screen and (max-width: 599px) {
   .main__button {
     padding: 18px 78px 18px 78px;
+    margin-top: 10%;
   }
 }
 
@@ -549,4 +551,7 @@ body {
   .application__btn-text {
     padding: 18px 79px 18px 79px;
   }
+}
+.application__btn-text:hover {
+  background-color: #678064;
 }/*# sourceMappingURL=order.css.map */
