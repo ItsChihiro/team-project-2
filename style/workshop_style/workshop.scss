@@ -290,7 +290,7 @@ body {
         background: $green;
         width: 1px;
         height: 85%;
-        top: 3cqmax;
+        top: 20px;
         left: 35px;
         position: absolute;
         z-index: 2;
@@ -365,7 +365,7 @@ body {
     }
 
     &__textonbcg {
-        max-width: 1440;
+        max-width: 1440px;
         @extend %title;
         color: aliceblue;
         margin: 0 28% 0 28%;
