@@ -134,4 +134,9 @@ body {
   border-radius: 30px;
   display: flex;
   justify-content: flex-end;
+}
+
+.active-link {
+  border-bottom: 2px solid #715B4B;
+  color: #715B4B;
 }/*# sourceMappingURL=header.css.map */
