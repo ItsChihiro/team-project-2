@@ -3,58 +3,89 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-}
-.history {
-  position: relative; 
-  &__content {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 120px 150px 160px;}
+
     @media #{$mobile} {
-      padding: 130px 0 90px;
+      max-width: 370px;
+      padding: 0 10px;
   }
+
+  @media #{$tablet} {
+      max-width: 600px;
+  }
+}
+
+
+.history {
+  max-width: 1160px;
+  margin: 0 auto;
+  &__content {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media #{$mobile} {
+      max-width: 100%;
+  }
+  }
+
   &__title{
-    color: #57463A;
-    font-family: Tenor Sans;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
+    @extend %title;
+    display: flex;
     line-height: 150%;
-    max-width: 734px;
-    text-align: center;
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 40px;
-    padding-left: 120px;
+
+    @media #{$mobile} {
+      font-size: 32px;
+      max-width: 314px;
+      text-align: start;
+      padding: 0 0 0 20px;
+      margin-bottom: 50px;
+  }
 
     }
-    &__pic{
-      width: 1160px;
-      height: 536px;
+    &__pic-img{
+      width: 100%;
+      max-height: 536px;
       margin: 0 auto;
       margin-bottom: 160px;
+
+      @media #{$mobile} {
+        width: 375px;
+        margin-bottom: 72px;
+  }
 }
-    &__row{
+}
+
+
+.history-facts {
       display: flex;
       justify-content: space-between;
-      width: 1200px;
-      padding: 0 15px;
+      max-width: 1160px;
+      padding: 0 20px 90px 0px;
       margin: 0 auto;
+      
+
+      @media #{$mobile} {
+        flex-direction: column;
+        padding: 0;
     }
     &__item{
       font-family: Tenor Sans;
       text-align: center;
       margin-bottom: 20px;
-      &-title {
-        color: $text_color;
-        font-size: 48px;
-      }
-      &-text {
-        font-family: Open Sans;
-        font-size: 16px;
-      }
     }
-}
+    &__item-title {
+      @extend %title;
+    }
+    &__item-text {
+      font-family: Open Sans;
+      font-size: 16px;
+    }
+  }
+
 
 .founder{
   margin: auto;
@@ -69,27 +100,28 @@
   &__photo{
     width: 460px;
     height: 470px;}
-    &-pic{
+    &__photo-pic{
       height: 100%;
       object-fit: cover;
-}
+    }
 &__dscr{
-  padding: 0 0 0 40px;
-  &-title{
-    margin-bottom: 20px;
-    font-family: Tenor Sans;
-    font-size: 24px;
-  }
-  &-subtitle {
+  padding: 0 0 0 40px;}
+  
+  &__dscr-subtitle {
     margin-bottom: 70px;
     font-family: Open Sans;
     font-size: 16px;
   }
-  &-text {
+  &__dscr-text {
       text-align: justify;
       font-size: 16px;
       margin-bottom: 30px;
-    }
+  }
+
+&__dscr-title{
+  margin-bottom: 20px;
+  font-family: Tenor Sans;
+  font-size: 24px;
 }
 }
 .philosofi{
@@ -115,31 +147,43 @@
 }
 }
 
+.review {
+  &__slider{
+    display: flex;
+    }
+  &__swiper-slide{
+    display: flex;
+    text-align: center;}
+  &__slide-pic{
+    display:flex;
+    max-width: 100%;
+    }
+}
 .massmedia{
+  
   position: relative;
+  &__slide-pic {
+    
+    justify-content: center;
+  }
   &__content{
       padding: 0 0 160px 0;
+  }
+  &__swiper-slide {
+    display: flex;
   }
   &__title{
       @extend %title;
       padding: 100px 0 0 160px;
-      
+
   }
   &__subtitle{
       font-family: Open Sans;
       margin-bottom: 20px;
       padding: 100px 0 0 160px;
   }
-  &__slider{
-  display: flex;
-  }
-  &__swiper-slide{
-      text-align: center;
-      &-pic{
-        display:flex;
-        max-width: 100%;
-      }
-  }
+
+  
 }
 
 .application {
