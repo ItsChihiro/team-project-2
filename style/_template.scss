@@ -26,7 +26,8 @@ body {
 }
 
 .container-main {
-    // max-width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -53,7 +54,6 @@ body {
 %text {
     font-family: 'Open Sans', sans-serif;
     color: #323232;
-    // font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
@@ -62,7 +62,6 @@ body {
 %text-two {
     font-family: 'Open Sans', sans-serif;
     color: #323232;
-    // font-size: 18px;
     font-style: normal;
     font-weight: 400;
 }
@@ -72,7 +71,6 @@ body {
     font-style: normal;
     font-weight: 700;
     color: #323232;
-    // font-size: 18px;
 }
 
 %button {
