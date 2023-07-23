@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "sources": [
-        "../_fonts.scss",
-        "../_template.scss",
-        "workshop.css"
-    ],
-    "names": [],
-    "mappings": "AAAQ,6GAAA;AACA,yGAAA;ACeR;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ACbJ;;ADgBA;EACI,yBAfS;ACEb;;ADgBA;EACI,iBAAA;EACA,WAAA;EACA,cAAA;ACbJ",
-    "file": "workshop.css"
-}
+{"version":3,"sources":["../_fonts.scss","../_template.scss","workshop.css"],"names":[],"mappings":"AAAQ,6GAAA;ACgBR;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ACdJ;;ADiBA;EACI,yBAfS;ACCb;;ADiBA;EACI,iBAAA;EACA,WAAA;EACA,cAAA;ACdJ","file":"workshop.css"}

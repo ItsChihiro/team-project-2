@@ -50,9 +50,8 @@
 
   &__nav-link {
     text-decoration: none;
-    color: #323232;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    @extend %text-two;
+    font-size: 16px;
   }
 
   &__logo {
@@ -67,6 +66,7 @@
       display: block;
       display: flex;
       justify-content: flex-end;
+      margin-right: 20px;
     }
   }
 
@@ -100,18 +100,17 @@
   }
 
   &__nav-mobile {
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #323232;
+    @extend %text-two;
+    padding: 8px 8px 8px 32px;
     display: block;
     transition: 0.3s;
   }
 
   &__nav-mobile:hover {
-    color: #f1f1f1;
+    text-decoration: underline $brown_line;
+    color: $brown_line;
   }
 
   &__closebtn {
