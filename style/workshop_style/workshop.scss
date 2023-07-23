@@ -59,11 +59,13 @@ body {
 
     &__textonbcg {
         @extend %title;
+        display: flex;
         color: $light_btn_text;
         margin: 0 10% 0 10%;
 
         @media #{$mobile} {
             padding-bottom: 22%;
+            text-align: left;
         }
 
         @media #{$tablet} {
@@ -78,18 +80,15 @@ body {
         font-weight: bold;
         background-color: $light_btn_text;
         text-decoration: none;
-        min-width: 328px;
-        margin: 0 40% 0 40%;
+        width: 328px;
 
         @media #{$tablet} {
             min-width: 318px;
-            margin: 0 20% 0 20%;
         }
 
         @media #{$mobile} {
             min-width: 270px;
-            margin: 0 10% 0 10%;
-        }
+       }
     }
 
     &__wrapper-button {
@@ -101,6 +100,7 @@ body {
         padding-top: 10%;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         text-align: center;
         flex-direction: column;
         background-image: url('/assets/img/workshop_images/BCGTheyTrustUs.png');
@@ -458,7 +458,7 @@ body {
         width: 100%;
 
         @media #{$mobile} {
-            width: 70%;
+            width: 80%;
             margin: 0 auto;
         }
     }
