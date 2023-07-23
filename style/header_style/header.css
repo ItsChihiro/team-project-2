@@ -93,4 +93,9 @@ body {
     margin-right: 22px;
     margin-top: 34px;
   }
+}
+
+.active-link {
+  border-bottom: 2px solid #715B4B;
+  color: #715B4B;
 }/*# sourceMappingURL=header.css.map */

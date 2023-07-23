@@ -73,3 +73,8 @@
     }
   }
 }
+
+.active-link {
+  border-bottom: 2px solid $brown_line;
+  color: $brown_line;
+}
