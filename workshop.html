@@ -23,10 +23,10 @@
                             <a href="./workshop.html" class="header__nav-link active-link">Мастер-классы</a>
                         </li>
                         <li class="header__item">
-                            <a href="./order.html" class="header__nav-link">Мебель на заказ</a>
+                            <a href="./order.html" class="header__nav-link ">Мебель на заказ</a>
                         </li>
                         <li class="header__logo">
-                            <a href="./home.html"><img src="./assets/img/template_images/logo.svg" alt="logo"></a>
+                            <a href="./home.html"><img src="./assets/img/template_images/logo.svg" alt="logo" /></a>
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__nav-link">Контакты</a>
@@ -35,14 +35,39 @@
                             <a href="./aboutUs.html" class="header__nav-link">О нас</a>
                         </li>
                     </ul>
+
+
+                    <ul class="header__items-mobile" id="mySidenav">
+                        <div class="header__closebtn" onclick="closeNav()">
+                            <img src="./assets/img/header_images/close-solid.svg" alt="burger"
+                                class="header__burger-closed" />
+                        </div>
+                        <li class="header__item">
+                            <a href="./home.html" class="header__nav-mobile">Главная</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-mobile">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-mobile ">Мебель на заказ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-mobile">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-mobile">О нас</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__burger">
+                        <button class="header__burger-btn" onclick="openNav()"><img
+                                src="./assets/img/header_images/burger.svg" alt="burger"
+                                class="header__burger-img" /></button>
+                    </div>
                 </nav>
-                <div class="header__burger">
-                    <img src="./assets/img/burger.svg" alt="burger" class="header__burger-img">
-                </div>
             </div>
         </div>
     </header>
-    <div class="container-main">
         <main>
             <section class="block-workshops">
                 <div class="block-workshops__trustus">
@@ -196,7 +221,6 @@
                 </div>
             </section>
         </main>
-    </div>
     <footer class="footer">
         <div class="footer__container">
             <nav class="footer__row">
@@ -248,6 +272,9 @@
             </nav>
         </div>
     </footer>
+
+    <script src="./js/header.js"></script>
+
 </body>
 
 </html>
