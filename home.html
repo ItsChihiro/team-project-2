@@ -7,44 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Столярная мастерская Nikason brand</title>
     <link rel="stylesheet" href="./style/normilize/normilize.css">
+    <link rel="stylesheet" href="./style/header_style/header.css">
     <link rel="stylesheet" href="./style/home_style/home.css">
+    <link rel="stylesheet" href="./style/footer_style/footer.css">
     <link rel="shortcut icon" href="./assets/img/template_images/Nikason-logo.svg" type="image/x-icon">
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__items">
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-link">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-link">Мебель на заказ</a>
+                        </li>
+                        <li class="header__logo">
+                            <a href="./home.html"><img src="./assets/img/template_images/logo.svg" alt="logo" /></a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-link">О нас</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="header__items-mobile" id="mySidenav">
+                        <div class="header__closebtn" onclick="closeNav()">
+                            <img src="./assets/img/header_images/close-solid.svg" alt="burger"
+                                class="header__burger-closed" />
+                        </div>
+                        <li class="header__item">
+                            <a href="./home.html" class="header__nav-mobile">Главная</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-mobile">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-mobile ">Мебель на заказ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-mobile">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-mobile">О нас</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__burger">
+                        <button class="header__burger-btn" onclick="openNav()"><img
+                                src="./assets/img/header_images/burger.svg" alt="burger"
+                                class="header__burger-img" /></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
 
     <main class="main container-main">
-        <div class="main__front-block">
+        <section class="main__front-block">
             <div class="front-block">
                 <img src="./assets/img/home_images/wood-polishing.png" alt="Руки мастера полируют девевянное изделие"
                     class="front-block__img">
 
                 <div class="front-block__info">
-                    <p class="text-xs">Столярная мастерская NIKASON BRAND</p>
+                    <p class="front-block__upper-text text-xs">Столярная мастерская NIKASON BRAND</p>
                     <h2 class="front-block__title title">
                         Изготовление и реставрация мебели
                     </h2>
                     <p class="text">Авторская мебель ручной работы, сделанная с душой и трепетом.</p>
-                    <a href="#" class="front-block__button button">Смотреть услуги</a>
+                    <a href="#services" class="front-block__button button">Смотреть услуги</a>
 
                     <div class="front-block__media">
-                        <a href="#" class="telegram">
+                        <a href="#" class="telegram front-block__media-item">
                             <img src="./assets/img/home_images/telegram-icon.svg" alt="telegram" class="media-icon">
                         </a>
-                        <a href="https://www.instagram.com/mebel_ot_nikason/" class="instagram">
-                            <img src="./assets/img/home_images/instagram-icon.svg" alt="telegram" class="media-icon">
+
+                        <a href="https://www.instagram.com/mebel_ot_nikason/" class="front-block__media-item">
+                            <img src="./assets/img/home_images/instagram-icon.svg" alt="instagram" class="media-icon">
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=79679272227" class="watsapp">
-                            <img src="./assets/img/home_images/watsapp-icon.svg" alt="telegram" class="media-icon">
+
+                        <a href="https://api.whatsapp.com/send?phone=79679272227" class="front-block__media-item">
+                            <img src="./assets/img/home_images/watsapp-icon.svg" alt="watsapp" class="media-icon">
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="main__brand-meaning-block container">
+        <section class="main__brand-meaning-block home-container">
             <div class="brand-meaning">
                 <h3 class="brand-meaning__title title">NIKASON BRAND это</h3>
                 <div class="brand-meaning__definitions">
@@ -62,10 +120,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="main__products-block container">
+        <section class="main__products-block home-container">
             <div class="our-products">
                 <h4 class="our-products__title title">Более 10 лет мы производим</h4>
 
@@ -127,19 +185,19 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="main__family-block">
+        <section class="main__family-block">
             <div class="family">
-                <h5 class="family__title title">NIKASON BRAND это семейная мастеркая</h5>
+                <h5 class="family__title title home-container">NIKASON BRAND это семейная мастеркая</h5>
 
                 <div class="family__content">
                     <img src="./assets/img/home_images/family.png" alt="Семейное фото мастеров" class="family__img">
 
                     <div class="family__info">
                         <article class="family__article">
-                            <h6 class="article-title">Саргылана и Никита Колодезниковы-Матчитовы
+                            <h6 class="family__article-title article-title">Саргылана и Никита Колодезниковы-Матчитовы
                             </h6>
                             <div class="family__text">
                                 <p class="text">Саргылана - рестовратор-декоратор, преображает и дарит вторую жизнь
@@ -152,29 +210,36 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="main__video-block container">
-            <div class="video">
+        <section class="main__video-block ">
+            <div class="video home-container">
                 <h5 class="video__title title">Посмотрите видео о нас</h5>
 
-                <iframe width="1160" height="700" src="https://www.youtube.com/embed/MlaGpRXoMPc"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/MlaGpRXoMPc" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
+                    allowfullscreen class="video__video">
                 </iframe>
             </div>
-        </div>
+
+            <iframe src="https://www.youtube.com/embed/MlaGpRXoMPc" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen class="video__video-mobile">
+            </iframe>
+        </section>
 
 
-        <div class="main__our-services-block">
+
+        <section class="main__our-services-block">
             <div class="our-services">
-                <h5 class="our-services__title title">Наши услуги</h5>
+                <a name="services"></a>
+                <h5 class="our-services__title title home-container">Наши услуги</h5>
 
                 <div class="our-services__content">
                     <div class="our-services__order twins-block">
-                        <img src="./assets/img/home_images/services-img1.png" alt="Тумба для ванной">
+                        <img src="./assets/img/home_images/services-img1.png" alt="Тумба для ванной"
+                            class="our-services__img">
 
                         <div class="our-services__order-info">
                             <article class="our-services__order-article">
@@ -194,7 +259,7 @@
 
                     <div class="our-services__workshop twins-block">
                         <img src="./assets/img/home_images/services-img2.png"
-                            alt="Мебель, сделанная на мастер-классах по реставрации">
+                            alt="Мебель, сделанная на мастер-классах по реставрации" class="our-services__img">
 
                         <div class="our-services__workshop-info">
                             <article class="our-services__workshop-article">
@@ -213,9 +278,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="main__qa-block container">
+        <section class="main__qa-block home-container">
+            <h5 class="quality-assurance__mobile-title title">
+                Гарантия качества мебели от NIKASON BRAND
+            </h5>
             <div class="quality-assurance">
                 <div class="quality-assurance__frame">
                     <h5 class="quality-assurance__title title">
@@ -236,10 +304,63 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__row">
+                <div class="footer__column footer__column-one">
+                    <p>ИП Колодезников-Матчитов Н.И.</p>
+                    <p>ИНН 143515646663</p>
+                </div>
+
+                <ul class="footer__column footer__column-two">
+                    <li class="footer__item">
+                        <a href="./workshop.html" class="footer__nav-link">Мастер-классы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./order.html" class="footer__nav-link">Мебель на заказ</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__column footer__column-three">
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Контакты</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./aboutUs.html" class="footer__nav-link">О нас</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__column footer__column-four">
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Политика кофиденциальности</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Договор оферты</a>
+                    </li>
+                </ul>
+
+                <div class="footer__media">
+                    <a href="#" class="footer__media-item footer__telegram">
+                        <img src="./assets/img/template_images/telegram.svg" alt="telegram" class="media-icon">
+                    </a>
+
+                    <a href="https://www.instagram.com/mebel_ot_nikason/" class="footer__media-item">
+                        <img src="./assets/img/template_images/insta.svg" alt="instagram" class="media-icon">
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=79679272227" class="footer__media-item">
+                        <img src="./assets/img/template_images/watsapp.svg" alt="watsapp" class="media-icon">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="./js/order.js"></script>
+    <script src="./js/header.js"></script>
 
 </body>
 
