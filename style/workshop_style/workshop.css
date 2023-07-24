@@ -62,13 +62,13 @@ body {
     display: none;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .mobile {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .desktop {
     display: none;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+@media screen and (min-width: 1024px) {
   .mobile {
     display: none;
   }
@@ -638,6 +638,11 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .design-guide__wrapper {
+    flex-direction: column;
+  }
+}
 .design-guide__title {
   padding-top: 5%;
   line-height: 150%;
@@ -672,6 +677,13 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .design-guide__picture {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 .design-guide__text {
   width: 64%;
 }
@@ -685,7 +697,7 @@ body {
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .design-guide__text {
     width: 90%;
-    margin-bottom: 10%;
+    padding-top: 5%;
   }
 }
 .design-guide__button-wrapper {
@@ -696,6 +708,12 @@ body {
     padding-top: 10%;
     width: 80%;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .design-guide__button-wrapper {
+    width: 90%;
+    padding-top: 5%;
   }
 }
 .design-guide__button {
