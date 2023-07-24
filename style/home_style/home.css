@@ -36,6 +36,7 @@ body {
   transition-duration: 0.4s;
   font-size: 16px;
   cursor: pointer;
+  border: none;
 }
 
 .home-container {
@@ -75,7 +76,7 @@ body {
   width: 245px;
   height: 60px;
   background-color: #A1B29F;
-  color: #F6F6F6;
+  color: #f6f6f6;
   text-decoration: none;
   display: flex;
   justify-content: center;
