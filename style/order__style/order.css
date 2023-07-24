@@ -534,6 +534,7 @@ body {
 }
 .application__btn-text {
   cursor: pointer;
+  text-decoration: none;
   background-color: #A1B29F;
   border: none;
   color: #f6f6f6;
