@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #F3EFEA;
 }
@@ -76,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
-  max-width: 278px;
+  max-width: 282px;
   padding: 0px 10px;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -87,6 +81,7 @@ body {
 .footer__column-one {
   color: #f6f6f6;
   font-size: 16px;
+  width: 285px;
 }
 @media screen and (max-width: 599px) {
   .footer__column-one {

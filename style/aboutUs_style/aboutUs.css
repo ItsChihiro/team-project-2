@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #F3EFEA;
 }
@@ -231,4 +225,7 @@ body {
   .application__btn-text {
     padding: 18px 79px 18px 79px;
   }
+}
+.application__btn-text:hover {
+  background-color: #678064;
 }/*# sourceMappingURL=aboutUs.css.map */
