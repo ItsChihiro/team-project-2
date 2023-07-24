@@ -34,7 +34,7 @@ body {
   font-family: "Tenor Sans", sans-serif;
   font-size: 48px;
   font-weight: 400;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 .stages__number-text, .main__button {
@@ -64,6 +64,7 @@ body {
   transition-duration: 0.4s;
   font-size: 16px;
   cursor: pointer;
+  border: none;
 }
 
 .container {
@@ -125,7 +126,7 @@ body {
   }
 }
 .main__order-text {
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -166,7 +167,7 @@ body {
 }
 .main__button {
   color: #715B4B;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border: none;
   padding: 18px 92px 18px 92px;
   font-family: "Open Sans", sans-serif;
@@ -541,7 +542,7 @@ body {
   cursor: pointer;
   background-color: #A1B29F;
   border: none;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;

@@ -10,8 +10,9 @@ $background: #F3EFEA;
 $green: #A1B29F;
 $blue: #4C6D77;
 $text_color: #57463A;
-$light_btn_text: #F6F6F6;
+$light_btn_text: #f6f6f6;
 $brown_line: #715B4B;
+$grey_line: #F3EFEA;
 
 
 * {
@@ -78,4 +79,5 @@ body {
     @extend %text;
     font-size: 16px;
     cursor: pointer;
+    border: none;
 }
