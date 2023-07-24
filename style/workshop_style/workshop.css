@@ -629,6 +629,13 @@ body {
   padding-top: 5%;
   margin: 0 auto;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .design-guide {
+    padding-bottom: 10%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
 .design-guide__wrapper {
   margin-bottom: 25%;
   display: flex;
@@ -648,12 +655,6 @@ body {
     max-width: 90%;
     padding-top: 15%;
     padding-bottom: 15%;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .design-guide__title {
-    max-width: 81%;
     margin: 0 auto;
   }
 }
@@ -686,6 +687,12 @@ body {
     width: 80%;
     margin: 0 auto;
     padding-top: 5%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .design-guide__text {
+    width: 90%;
+    margin-bottom: 10%;
   }
 }
 .design-guide__button-wrapper {

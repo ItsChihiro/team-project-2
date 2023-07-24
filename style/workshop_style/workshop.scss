@@ -593,6 +593,12 @@ body {
     padding-top: 5%;
     margin: 0 auto;
 
+    @media #{$tablet} {
+        padding-bottom: 10%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
     &__wrapper {
 
         margin-bottom: 25%;
@@ -615,11 +621,6 @@ body {
             margin: 0 auto;
         }
 
-        @media #{$tablet} {
-
-            max-width: 81%;
-            margin: 0 auto;
-        }
 
     }
 
@@ -655,6 +656,12 @@ body {
             margin: 0 auto;
             padding-top: 5%;
         }
+        @media #{$tablet} {
+            width: 90%;
+            margin-bottom: 10%;
+        }
+
+
     }
 
     &__button-wrapper {
@@ -665,6 +672,7 @@ body {
             width: 80%;
             margin: 0 auto;
         }
+
     }
 
     &__button {
