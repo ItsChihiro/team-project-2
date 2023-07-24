@@ -76,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
-  max-width: 278px;
+  max-width: 282px;
   padding: 0px 10px;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -92,6 +92,9 @@ body {
   .footer__column-one {
     order: 5;
   }
+}
+.footer__ip-text {
+  width: 270px;
 }
 .footer__column-two {
   gap: 9px;
