@@ -14,6 +14,7 @@ body {
   color: #323232;
   font-style: normal;
   font-weight: 300;
+  line-height: 150%;
 }
 
 .footer {
@@ -69,7 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
-  max-width: 278px;
+  max-width: 282px;
   padding: 0px 10px;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -80,6 +81,7 @@ body {
 .footer__column-one {
   color: #f6f6f6;
   font-size: 16px;
+  width: 285px;
 }
 @media screen and (max-width: 599px) {
   .footer__column-one {
