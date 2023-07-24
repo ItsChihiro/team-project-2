@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 
-.application__title-text, .massmedia__title, .philosofi__title {
+.application__title-text, .massmedia__title, .philosofi__title, .history-facts__item-title, .history__title {
   font-family: "Tenor Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -31,7 +31,7 @@
   font-size: 48px;
 }
 @media screen and (max-width: 599px) {
-  .application__title-text, .massmedia__title, .philosofi__title {
+  .application__title-text, .massmedia__title, .philosofi__title, .history-facts__item-title, .history__title {
     font-size: 32px;
   }
 }
@@ -40,57 +40,81 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+@media screen and (max-width: 599px) {
+  .container {
+    max-width: 370px;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    max-width: 600px;
+  }
+}
 
 .history {
-  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
 }
 .history__content {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 120px 150px 160px;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (max-width: 599px) {
-  .history {
-    padding: 130px 0 90px;
+  .history__content {
+    max-width: 100%;
   }
 }
 .history__title {
-  color: #57463A;
-  font-family: Tenor Sans;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
+  display: flex;
   line-height: 150%;
-  max-width: 734px;
-  text-align: center;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 40px;
-  padding-left: 120px;
 }
-.history__pic {
-  width: 1160px;
-  height: 536px;
+@media screen and (max-width: 599px) {
+  .history__title {
+    font-size: 32px;
+    max-width: 314px;
+    text-align: start;
+    padding: 0 0 0 20px;
+    margin-bottom: 50px;
+  }
+}
+.history__pic-img {
+  width: 100%;
+  max-height: 536px;
   margin: 0 auto;
   margin-bottom: 160px;
 }
-.history__row {
+@media screen and (max-width: 599px) {
+  .history__pic-img {
+    width: 375px;
+    margin-bottom: 72px;
+  }
+}
+
+.history-facts {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
-  padding: 0 15px;
+  max-width: 1160px;
+  padding: 0 20px 90px 0px;
   margin: 0 auto;
 }
-.history__item {
+@media screen and (max-width: 599px) {
+  .history-facts {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.history-facts__item {
   font-family: Tenor Sans;
   text-align: center;
   margin-bottom: 20px;
 }
-.history__item-title {
-  color: #57463A;
-  font-size: 48px;
-}
-.history__item-text {
+.history-facts__item-text {
   font-family: Open Sans;
   font-size: 16px;
 }
@@ -110,18 +134,13 @@
   width: 460px;
   height: 470px;
 }
-.founder-pic {
+.founder__photo-pic {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .founder__dscr {
   padding: 0 0 0 40px;
-}
-.founder__dscr-title {
-  margin-bottom: 20px;
-  font-family: Tenor Sans;
-  font-size: 24px;
 }
 .founder__dscr-subtitle {
   margin-bottom: 70px;
@@ -132,6 +151,11 @@
   text-align: justify;
   font-size: 16px;
   margin-bottom: 30px;
+}
+.founder__dscr-title {
+  margin-bottom: 20px;
+  font-family: Tenor Sans;
+  font-size: 24px;
 }
 
 .philosofi {
@@ -156,11 +180,29 @@
   padding-right: 13%;
 }
 
+.review__slider {
+  display: flex;
+}
+.review__swiper-slide {
+  display: flex;
+  text-align: center;
+}
+.review__slide-pic {
+  display: flex;
+  max-width: 100%;
+}
+
 .massmedia {
   position: relative;
 }
+.massmedia__slide-pic {
+  justify-content: center;
+}
 .massmedia__content {
   padding: 0 0 160px 0;
+}
+.massmedia__swiper-slide {
+  display: flex;
 }
 .massmedia__title {
   padding: 100px 0 0 160px;
@@ -169,16 +211,6 @@
   font-family: Open Sans;
   margin-bottom: 20px;
   padding: 100px 0 0 160px;
-}
-.massmedia__slider {
-  display: flex;
-}
-.massmedia__swiper-slide {
-  text-align: center;
-}
-.massmedia__swiper-slide-pic {
-  display: flex;
-  max-width: 100%;
 }
 
 .application__title {
