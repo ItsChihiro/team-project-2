@@ -1,16 +1,14 @@
 @import "../template";
 
-body {
-    background: $background;
-}
 
 .container-main {
     position: relative;
 }
 
-.block{
+.block {
     max-width: 1160px;
 }
+
 .title {
     @extend %title;
 }
@@ -18,7 +16,6 @@ body {
 .button {
     @extend %text;
     @extend %button;
-
 }
 
 .desktop {
@@ -31,7 +28,6 @@ body {
 }
 
 .mobile {
-
 
     @media #{$desktop} {
         display: none;
@@ -88,7 +84,7 @@ body {
 
         @media #{$mobile} {
             min-width: 270px;
-       }
+        }
     }
 
     &__wrapper-button {
@@ -126,7 +122,6 @@ body {
 .block-ourworks {
 
     margin-bottom: 5%;
-
     max-width: 1160px;
     margin: 0 auto;
 
@@ -152,7 +147,6 @@ body {
         }
 
         @media #{$tablet} {
-
             max-width: 81%;
             margin: 0 auto;
         }
@@ -204,7 +198,6 @@ body {
     }
 
     &__wrapper-button {
-
         padding-top: 7%;
         margin-bottom: 5%;
         display: flex;
@@ -233,6 +226,10 @@ body {
         @media #{$mobile} {
             min-width: 300px;
         }
+    }
+
+    &__button:hover {
+        background-color: #678064;
     }
 }
 
@@ -311,7 +308,6 @@ body {
     }
 
     &__no-item {
-
         padding: 30px;
         background: url('/assets/img/workshop_images/Ellipce.svg');
         background-position: center;
@@ -328,7 +324,6 @@ body {
     }
 
     &__item {
-
         margin-bottom: 6%;
         display: flex;
         flex-wrap: nowrap;
@@ -393,12 +388,10 @@ body {
 
         @media #{$mobile} {
             height: 55vh;
-
         }
 
         @media #{$tablet} {
             height: 50vh;
-
         }
     }
 }
@@ -466,7 +459,6 @@ body {
     &__subtitle {
         margin-top: 20%;
         font-weight: 700;
-
     }
 
     &__subtitle2 {
@@ -594,7 +586,6 @@ body {
     margin: 0 auto;
 
     &__wrapper {
-
         margin-bottom: 25%;
         display: flex;
 
@@ -616,7 +607,6 @@ body {
         }
 
         @media #{$tablet} {
-
             max-width: 81%;
             margin: 0 auto;
         }
@@ -627,7 +617,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
 
     &__picture-wrapper {
@@ -636,7 +625,6 @@ body {
     }
 
     &__picture {
-
         max-height: 475px;
         border: 1px $brown_line solid;
 
@@ -676,7 +664,6 @@ body {
         text-decoration: none;
         min-width: 328px;
 
-
         @media #{$tablet} {
             min-width: 318px;
         }
@@ -684,6 +671,10 @@ body {
         @media #{$mobile} {
             min-width: 300px;
         }
+    }
+
+    &__button:hover {
+        background-color: #678064;
     }
 
 }

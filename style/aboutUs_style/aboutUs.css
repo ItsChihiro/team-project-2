@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #F3EFEA;
 }
@@ -21,6 +15,7 @@ body {
   font-weight: 400;
   color: #57463A;
   font-size: 48px;
+  line-height: 120%;
 }
 @media screen and (max-width: 599px) {
   .application__title-text, .massmedia__title, .philosofi__title, .history-facts__item-title, .history__title {
@@ -31,17 +26,6 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-}
-@media screen and (max-width: 599px) {
-  .container {
-    max-width: 370px;
-    padding: 0 10px;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .container {
-    max-width: 600px;
-  }
 }
 
 .history {
@@ -231,7 +215,7 @@ body {
   cursor: pointer;
   background-color: #A1B29F;
   border: none;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -241,4 +225,7 @@ body {
   .application__btn-text {
     padding: 18px 79px 18px 79px;
   }
+}
+.application__btn-text:hover {
+  background-color: #678064;
 }/*# sourceMappingURL=aboutUs.css.map */

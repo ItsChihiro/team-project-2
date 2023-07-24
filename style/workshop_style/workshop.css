@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #F3EFEA;
 }
@@ -50,10 +44,6 @@ body {
   font-size: 16px;
   cursor: pointer;
   border: none;
-}
-
-body {
-  background: #F3EFEA;
 }
 
 .container-main {
@@ -278,6 +268,9 @@ body {
   .block-ourworks__button {
     min-width: 300px;
   }
+}
+.block-ourworks__button:hover {
+  background-color: #678064;
 }
 
 .block-what-technics {
@@ -718,4 +711,7 @@ body {
   .design-guide__button {
     min-width: 300px;
   }
+}
+.design-guide__button:hover {
+  background-color: #678064;
 }/*# sourceMappingURL=workshop.css.map */
