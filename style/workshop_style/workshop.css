@@ -46,10 +46,6 @@ body {
   border: none;
 }
 
-body {
-  background: #F3EFEA;
-}
-
 .container-main {
   position: relative;
 }
@@ -272,6 +268,9 @@ body {
   .block-ourworks__button {
     min-width: 300px;
   }
+}
+.block-ourworks__button:hover {
+  background-color: #678064;
 }
 
 .block-what-technics {
@@ -712,4 +711,7 @@ body {
   .design-guide__button {
     min-width: 300px;
   }
+}
+.design-guide__button:hover {
+  background-color: #678064;
 }/*# sourceMappingURL=workshop.css.map */
