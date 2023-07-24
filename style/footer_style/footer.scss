@@ -1,6 +1,5 @@
 @import "../template";
 
-
 .footer {
     width: 100%;
     min-height: 380px;
@@ -56,7 +55,7 @@
         display: flex;
         flex-direction: column;
         list-style: none;
-        max-width: 282px;
+        max-width: 278px;
         padding: 0px 10px;
 
         @media #{$tablet} {
@@ -72,10 +71,6 @@
         @media #{$mobile} {
             order: 5;
         }
-    }
-
-    &__ip-text {
-        width: 270px;
     }
 
     &__column-two {
