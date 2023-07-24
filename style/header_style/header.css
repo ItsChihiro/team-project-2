@@ -1,52 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
-  src: local("../assets/fonts/Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../assets/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Tenor Sans";
-  src: url("../assets/fonts/Tenor_Sans/TenorSans.eot");
-  src: local("../assets/fonts/Tenor_Sans/Tenor Sans"), local("../assets/fonts/Tenor_Sans/TenorSans"), url("../assets/fonts/Tenor_Sans/TenorSans.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Tenor_Sans/TenorSans.woff2") format("woff2"), url("../assets/fonts/Tenor_Sans/TenorSans.woff") format("woff"), url("../assets/fonts/Tenor_Sans/TenorSans.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F3EFEA;
+}
+
 .container-main {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/Open_Sans/OpenSans-Light.eot");
-  src: local("../assets/fonts/Open Sans Light"), local("OpenSans-Light"), url("../assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("../assets/fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
+.header__nav-mobile, .header__nav-link {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
   font-style: normal;
-}
-@font-face {
-  font-family: "Tenor Sans";
-  src: url("../assets/fonts/Tenor_Sans/TenorSans.eot");
-  src: local("../assets/fonts/Tenor_Sans/Tenor Sans"), local("../assets/fonts/Tenor_Sans/TenorSans"), url("../assets/fonts/Tenor_Sans/TenorSans.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Tenor_Sans/TenorSans.woff2") format("woff2"), url("../assets/fonts/Tenor_Sans/TenorSans.woff") format("woff"), url("../assets/fonts/Tenor_Sans/TenorSans.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container-main {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .header {
@@ -99,9 +72,7 @@
 }
 .header__nav-link {
   text-decoration: none;
-  color: #323232;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 .header__logo {
   width: 87px;
@@ -113,6 +84,65 @@
 @media screen and (max-width: 599px) {
   .header__burger {
     display: block;
-    margin-right: 22px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
   }
+}
+.header__burger-btn {
+  border: none;
+  cursor: pointer;
+}
+.header__burger-img {
+  width: 40px;
+  height: 40px;
+}
+.header__items-mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F3EFEA;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .header__items-mobile {
+    padding-top: 25px;
+  }
+}
+.header__nav-mobile {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.3s;
+}
+.header__nav-mobile:hover {
+  -webkit-text-decoration: underline #715B4B;
+          text-decoration: underline #715B4B;
+  color: #715B4B;
+}
+.header__closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-top: 20px;
+}
+.header__burger-closed {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.active-link {
+  border-bottom: 2px solid #715B4B;
+  color: #715B4B;
 }/*# sourceMappingURL=header.css.map */

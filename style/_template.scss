@@ -20,8 +20,13 @@ $brown_line: #715B4B;
     box-sizing: border-box;
 }
 
+body {
+    background-color: $background;
+}
+
 .container-main {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -31,10 +36,18 @@ $brown_line: #715B4B;
     font-weight: 400;
     color: #57463A;
     font-size: 48px;
+    line-height: 120%;
 
     @media #{$mobile} {
         font-size: 32px;
     }
+}
+
+%title-action {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: $light_btn_text;
 }
 
 %text {
@@ -42,6 +55,14 @@ $brown_line: #715B4B;
     color: #323232;
     font-style: normal;
     font-weight: 300;
+    line-height: 150%;
+}
+
+%text-two {
+    font-family: 'Open Sans', sans-serif;
+    color: #323232;
+    font-style: normal;
+    font-weight: 400;
 }
 
 %img-subtitle {
@@ -49,9 +70,12 @@ $brown_line: #715B4B;
     font-style: normal;
     font-weight: 700;
     color: #323232;
-    font-size: 18px;
 }
 
 %button {
+    border: none;
+    transition-duration: 0.4s;
+    @extend %text;
+    font-size: 16px;
     cursor: pointer;
 }

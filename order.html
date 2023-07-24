@@ -6,11 +6,328 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мебель на заказ</title>
+    <link rel="stylesheet" href="./style/footer_style/footer.css">
+    <link rel="stylesheet" href="./style/header_style/header.css">
     <link rel="stylesheet" href="./style/normilize/normilize.css">
-    <link rel="stylesheet" href="./style/order/order.css">
+    <link rel="stylesheet" href="./style/order__style/order.css">
+    <link rel="shortcut icon" href="./assets/img/template_images/Nikason-logo.svg" type="image/x-icon">
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__items">
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-link">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-link active-link">Мебель на заказ</a>
+                        </li>
+                        <li class="header__logo">
+                            <a href="./home.html"><img src="./assets/img/template_images/logo.svg" alt="logo" /></a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-link">О нас</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="header__items-mobile" id="mySidenav">
+                        <div class="header__closebtn" onclick="closeNav()">
+                            <img src="./assets/img/header_images/close-solid.svg" alt="burger"
+                                class="header__burger-closed" />
+                        </div>
+                        <li class="header__item">
+                            <a href="./home.html" class="header__nav-mobile">Главная</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-mobile">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-mobile ">Мебель на заказ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-mobile">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-mobile">О нас</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__burger">
+                        <button class="header__burger-btn" onclick="openNav()"><img
+                                src="./assets/img/header_images/burger.svg" alt="burger"
+                                class="header__burger-img" /></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__order">
+            <div class="main__container">
+                <div class="main__order-wrapper">
+                    <p class="main__order-text">Воплотим вашу любую задумку в реальность</p>
+                    <h3 class="main__order-worshop">Столярная мастерская</h3>
+                    <h3 class="main__order-name">NIKASON BRAND</h3>
+                    <a href="#top" class="main__button">Заказать мебель</a>
+                </div>
+            </div>
+        </section>
+        <section class="choose-us">
+            <div class="choose-us__container container">
+                <div class="choose-us__title">
+                    <h2 class="choose-us__title-text">Почему выбирают нас</h2>
+                </div>
+                <div class="choose-us__info">
+                    <div class="choose-us__info-block">
+                        <h4 class="choose-us__block-title">Давно на рынке</h4>
+                        <div class="choose-us__block-line"></div>
+                        <p class="choose-us__block-text">Опыт работы на рынке больше 10 лет</p>
+                    </div>
+                    <div class="choose-us__info-block">
+                        <h4 class="choose-us__block-title">Гарантия качества</h4>
+                        <div class="choose-us__block-line"></div>
+                        <p class="choose-us__block-text">Предоставляем гарантию 12 месяцев на изделия</p>
+                    </div>
+                    <div class="choose-us__info-block">
+                        <h4 class="choose-us__block-title">Юридическая прозрачность</h4>
+                        <div class="choose-us__block-line"></div>
+                        <p class="choose-us__block-text">Заключаем с каждым клиентом договор</p>
+                    </div>
+                    <div class="choose-us__info-block">
+                        <h4 class="choose-us__block-title">Экологичность</h4>
+                        <div class="choose-us__block-line"></div>
+                        <p class="choose-us__block-text">Мебель из натуральной древесины, краски без токсичного состава
+                        </p>
+                    </div>
+                    <div class="choose-us__info-block">
+                        <h4 class="choose-us__block-title">Эксклюзивность</h4>
+                        <div class="choose-us__block-line"></div>
+                        <p class="choose-us__block-text">Каждая мебель изготовлена по индивидуальному дизайну</p>
+                    </div>
+                    <div class="choose-us__info-block">
+                        <h4 class="choose-us__block-title">Долговечность</h4>
+                        <div class="choose-us__block-line"></div>
+                        <p class="choose-us__block-text">Мебель из массива дерева прослужит даже вашим детям</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="portfolio__container container">
+                <div class="portfolio__title">
+                    <h2 class="portfolio__title-text">Портфолио</h2>
+                </div>
+                <div class="portfolio__work">
+                    <div class="portfolio__prev">
+                        <img src="./assets/img/order_images/left-thin.svg" alt="prev" id="prev">
+                    </div>
+                    <div class="portfolio__photo">
+                        <figure class="portfolio__photo-container">
+                            <img src="./assets/img/order_images/order-furniture-one.jpg" alt="picture-photo"
+                                class="portfolio__photo-img">
+                        </figure>
+                    </div>
+                    <div class="portfolio__next">
+                        <img src="./assets/img/order_images/right-thin.svg" alt="next" id="next">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stages">
+            <div class="stages__container container">
+                <div class="stages__title">
+                    <h2 class="stages__title-text">Этапы производства</h2>
+                </div>
+                <div class="stages__numbers">
+                    <div class="stages__number-block">
+                        <p class="stages__number-figure">1</p>
+                        <p class="stages__number-text">Встреча с клиентом</p>
+                    </div>
+                    <div class="stages__number-block">
+                        <p class="stages__number-figure">2</p>
+                        <p class="stages__number-text">Подписание договора, внесение предоплаты</p>
+                    </div>
+                    <div class="stages__number-block">
+                        <p class="stages__number-figure">3</p>
+                        <p class="stages__number-text">Выезд к клиенту на замер (при необходимости)</p>
+                    </div>
+                    <div class="stages__number-block">
+                        <p class="stages__number-figure">4</p>
+                        <p class="stages__number-text">Составление проекта</p>
+                    </div>
+                    <div class="stages__number-block">
+                        <p class="stages__number-figure">5</p>
+                        <p class="stages__number-text">Изготовление и согласование всех стадий с клиентом</p>
+                    </div>
+                    <div class="stages__number-block">
+                        <p class="stages__number-figure">6</p>
+                        <p class="stages__number-text">Доставка и монтаж изделия (при необходимости)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client">
+            <div class="client__title container">
+                <h2 class="client__title-text">Клиенты о нас</h2>
+            </div>
+            <div class="client__reviews">
+                <div class="client__reviews-btn">
+                    <button class="client__reviews-pre"><img src="./assets/img/order_images/caret-left-solid.svg"
+                            alt="caret-left-solid" class="pre-img"></button>
+                    <button class="client__reviews-nxt"><img src="./assets/img/order_images/caret-right-solid.svg"
+                            alt="caret-right-solid" class="nxt-img"></button>
+                </div>
+                <div class="client__reviews-container">
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-one.png" alt="review-one"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+
+
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-two.png" alt="review-two"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-three.png" alt="review-three"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-four.png" alt="review-four"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-five.png" alt="review-five"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-six.png" alt="review-six"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-seven.png" alt="review-seven"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-eight.png" alt="review-eight"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-nine.png" alt="review-nine"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-ten.png" alt="review-ten"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-eleven.png" alt="review-eleven"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                    <div class="client__reviews-card">
+                        <div class="client__reviews-img">
+                            <img src="./assets/img/order_images/order_review-twelve.png" alt="review-twelve"
+                                class="client__reviews-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="application">
+            <div class="application__container container">
+                <div class="application__title">
+                    <h2 class="application__title-text">Оставьте заявку и мы с вами свяжемся</h2>
+                </div>
+                <div class="application__btn" name="top">
+                    <a name="top"></a>
+                    <button class="application__btn-text">Оставить заявку</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__row">
+                <div class="footer__column footer__column-one">
+                    <p class="footer__ip-text">ИП Колодезников-Матчитов Н.И.</p>
+                    <p>ИНН 143515646663</p>
+                </div>
+
+                <ul class="footer__column footer__column-two">
+                    <li class="footer__item">
+                        <a href="./workshop.html" class="footer__nav-link">Мастер-классы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="./order.html" class="footer__nav-link">Мебель на заказ</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__column footer__column-three">
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Контакты</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./aboutUs.html" class="footer__nav-link">О нас</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__column footer__column-four">
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Политика кофиденциальности</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Договор оферты</a>
+                    </li>
+                </ul>
+
+                <div class="footer__media">
+                    <a href="#" class="footer__media-item footer__telegram">
+                        <img src="./assets/img/template_images/telegram.svg" alt="telegram" class="media-icon">
+                    </a>
+
+                    <a href="https://www.instagram.com/mebel_ot_nikason/" class="footer__media-item">
+                        <img src="./assets/img/template_images/insta.svg" alt="instagram" class="media-icon">
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=79679272227" class="footer__media-item">
+                        <img src="./assets/img/template_images/watsapp.svg" alt="watsapp" class="media-icon">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="./js/order.js"></script>
+    <script src="./js/header.js"></script>
 
 </body>
 

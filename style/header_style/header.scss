@@ -1,7 +1,4 @@
 @import "../template";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap');
-
-@import "../template";
 
 .header {
   width: 100%;
@@ -53,9 +50,8 @@
 
   &__nav-link {
     text-decoration: none;
-    color: #323232;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    @extend %text-two;
+    font-size: 16px;
   }
 
   &__logo {
@@ -68,9 +64,75 @@
 
     @media #{$mobile} {
       display: block;
-      margin-right: 22px;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
     }
   }
+
+  &__burger-btn {
+    border: none;
+    cursor: pointer;
+  }
+
+  &__burger-img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  &__items-mobile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F3EFEA;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+
+    @media #{$mobile} {
+      padding-top: 25px;
+    }
+  }
+
+  &__nav-mobile {
+    text-decoration: none;
+    font-size: 25px;
+    @extend %text-two;
+    padding: 8px 8px 8px 32px;
+    display: block;
+    transition: 0.3s;
+  }
+
+  &__nav-mobile:hover {
+    text-decoration: underline $brown_line;
+    color: $brown_line;
+  }
+
+  &__closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  &__burger-closed {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
 }
 
-
+.active-link {
+  border-bottom: 2px solid $brown_line;
+  color: $brown_line;
+}
