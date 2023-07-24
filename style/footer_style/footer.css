@@ -54,7 +54,7 @@ body {
   }
 }
 .footer__nav-link {
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 16px;
   text-decoration: none;
 }
@@ -85,7 +85,7 @@ body {
   }
 }
 .footer__column-one {
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 16px;
 }
 @media screen and (max-width: 599px) {
