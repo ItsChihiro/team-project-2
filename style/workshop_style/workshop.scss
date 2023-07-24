@@ -25,15 +25,15 @@
     @media #{$mobile} {
         display: none;
     }
+
+    @media #{$tablet} {
+        display: none;
+    }
 }
 
 .mobile {
 
     @media #{$desktop} {
-        display: none;
-    }
-
-    @media #{$tablet} {
         display: none;
     }
 
@@ -585,6 +585,7 @@
     padding-top: 5%;
     margin: 0 auto;
 
+
     &__wrapper {
         margin-bottom: 25%;
         display: flex;
@@ -592,7 +593,15 @@
         @media #{$mobile} {
             flex-direction: column;
         }
+
+        @media #{$tablet} {
+            flex-direction: column;
+            padding-bottom: 10%;
+            max-width: 90%;
+            margin: 0 auto;
+        }
     }
+
 
     &__title {
         padding-top: 5%;
@@ -605,13 +614,8 @@
             padding-bottom: 15%;
             margin: 0 auto;
         }
-
-        @media #{$tablet} {
-            max-width: 81%;
-            margin: 0 auto;
-        }
-
     }
+
 
     &__text-wrapper {
         display: flex;
@@ -629,7 +633,13 @@
         border: 1px $brown_line solid;
 
         @media #{$mobile} {
-            width: 90%;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @media #{$tablet} {
+            max-height: 100%;
+            max-width: 100%;
             margin: 0 auto;
         }
     }
@@ -643,7 +653,13 @@
             margin: 0 auto;
             padding-top: 5%;
         }
+
+        @media #{$tablet} {
+            width: 90%;
+            padding-top: 5%;
+        }
     }
+
 
     &__button-wrapper {
         width: 100%;
@@ -654,6 +670,7 @@
             margin: 0 auto;
         }
     }
+
 
     &__button {
         background-color: $green;
@@ -666,6 +683,7 @@
 
         @media #{$tablet} {
             min-width: 318px;
+            margin-top: 50px;
         }
 
         @media #{$mobile} {
@@ -676,5 +694,4 @@
     &__button:hover {
         background-color: #678064;
     }
-
 }
