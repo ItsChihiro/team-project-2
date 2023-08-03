@@ -1,17 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #F3EFEA;
 }
 
 .container-main {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -33,7 +28,7 @@ body {
   font-family: "Tenor Sans", sans-serif;
   font-size: 48px;
   font-weight: 400;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 .stages__number-text, .main__button {
@@ -63,6 +58,7 @@ body {
   transition-duration: 0.4s;
   font-size: 16px;
   cursor: pointer;
+  border: none;
 }
 
 .container {
@@ -124,7 +120,7 @@ body {
   }
 }
 .main__order-text {
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -165,13 +161,14 @@ body {
 }
 .main__button {
   color: #715B4B;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border: none;
   padding: 18px 92px 18px 92px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+  margin-top: 20%;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .main__button {
@@ -181,6 +178,7 @@ body {
 @media screen and (max-width: 599px) {
   .main__button {
     padding: 18px 78px 18px 78px;
+    margin-top: 10%;
   }
 }
 
@@ -536,9 +534,10 @@ body {
 }
 .application__btn-text {
   cursor: pointer;
+  text-decoration: none;
   background-color: #A1B29F;
   border: none;
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -548,4 +547,7 @@ body {
   .application__btn-text {
     padding: 18px 79px 18px 79px;
   }
+}
+.application__btn-text:hover {
+  background-color: #678064;
 }/*# sourceMappingURL=order.css.map */

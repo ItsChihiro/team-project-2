@@ -1,15 +1,232 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tenor+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #F3EFEA;
 }
 
 .container-main {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.application__title-text, .massmedia__title, .philosofi__title, .history-facts__item-title, .history__title {
+  font-family: "Tenor Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #57463A;
+  font-size: 48px;
+  line-height: 120%;
+}
+@media screen and (max-width: 599px) {
+  .application__title-text, .massmedia__title, .philosofi__title, .history-facts__item-title, .history__title {
+    font-size: 32px;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.history {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.history__content {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 599px) {
+  .history__content {
+    max-width: 100%;
+  }
+}
+.history__title {
+  display: flex;
+  line-height: 150%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 599px) {
+  .history__title {
+    font-size: 32px;
+    max-width: 314px;
+    text-align: start;
+    padding: 0 0 0 20px;
+    margin-bottom: 50px;
+  }
+}
+.history__pic-img {
+  width: 100%;
+  max-height: 536px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+@media screen and (max-width: 599px) {
+  .history__pic-img {
+    width: 375px;
+    margin-bottom: 72px;
+  }
+}
+
+.history-facts {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  padding: 0 20px 90px 0px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 599px) {
+  .history-facts {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.history-facts__item {
+  font-family: Tenor Sans;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.history-facts__item-text {
+  font-family: Open Sans;
+  font-size: 16px;
+}
+
+.founder {
+  margin: auto;
+  width: 1080px;
+  height: 312px;
+  justify-content: center;
+  position: relative;
+}
+.founder__content {
+  position: relative;
+  display: flex;
+}
+.founder__photo {
+  width: 460px;
+  height: 470px;
+}
+.founder__photo-pic {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.founder__dscr {
+  padding: 0 0 0 40px;
+}
+.founder__dscr-subtitle {
+  margin-bottom: 70px;
+  font-family: Open Sans;
+  font-size: 16px;
+}
+.founder__dscr-text {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.founder__dscr-title {
+  margin-bottom: 20px;
+  font-family: Tenor Sans;
+  font-size: 24px;
+}
+
+.philosofi {
+  position: relative;
+}
+.philosofi__content {
+  padding: 160px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.philosofi__title {
+  padding: 100px 0 50px 160px;
+}
+.philosofi__subtitle {
+  font-family: Open Sans;
+  font-size: 24px;
+  align-self: flex-end;
+  width: 900px;
+  text-align: right;
+  color: #323232;
+  padding-right: 13%;
+}
+
+.review__slider {
+  display: flex;
+}
+.review__swiper-slide {
+  display: flex;
+  text-align: center;
+}
+.review__slide-pic {
+  display: flex;
+  max-width: 100%;
+}
+
+.massmedia {
+  position: relative;
+}
+.massmedia__slide-pic {
+  justify-content: center;
+}
+.massmedia__content {
+  padding: 0 0 160px 0;
+}
+.massmedia__swiper-slide {
+  display: flex;
+}
+.massmedia__title {
+  padding: 100px 0 0 160px;
+}
+.massmedia__subtitle {
+  font-family: Open Sans;
+  margin-bottom: 20px;
+  padding: 100px 0 0 160px;
+}
+
+.application__title {
+  padding: 100px 0 0 160px;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .application__title-text {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .application__title-text {
+    padding-top: 20%;
+    padding-bottom: 7%;
+  }
+}
+.application__btn {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.application__btn-text {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #A1B29F;
+  border: none;
+  color: #f6f6f6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 52px 18px 52px;
+}
+@media screen and (max-width: 599px) {
+  .application__btn-text {
+    padding: 18px 79px 18px 79px;
+  }
+}
+.application__btn-text:hover {
+  background-color: #678064;
 }/*# sourceMappingURL=aboutUs.css.map */

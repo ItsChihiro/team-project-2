@@ -101,7 +101,7 @@
     }
 
 
-    &__button{
+    &__button {
         @extend %button;
         color: $brown_line;
         background-color: $light_btn_text;
@@ -111,6 +111,7 @@
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
+        margin-top: 20%;
 
         @media #{$tablet} {
             padding: 18px 85px 18px 85px;
@@ -118,12 +119,14 @@
 
         @media #{$mobile} {
             padding: 18px 78px 18px 78px;
+            margin-top: 10%;
         }
     }
 }
 
 .choose-us {
     margin-bottom: 8%;
+
     &__container {
         padding-top: 10%;
     }
@@ -132,7 +135,7 @@
         margin-bottom: 9%;
     }
 
-    &__title-text{
+    &__title-text {
         @extend %title;
 
         @media #{$tablet} {
@@ -233,15 +236,9 @@
 
     &__photo {
         max-width: 890px;
-        @media #{$tablet} {
-        }
-
-        @media #{$mobile} {
-        }
     }
 
     &__photo-container {
-        // transition: transform .8s ease;
         max-width: 900px;
 
         @media screen and (max-width: 1440px) {
@@ -261,7 +258,7 @@
         border-radius: 10%;
         width: 800px;
         height: 760px;
-        margin: 0 auto;;
+        margin: 0 auto;
 
         @media screen and (max-width: 1440px) {
             width: 600px;
@@ -298,7 +295,7 @@
 
         @media #{$mobile} {
             width: 20px;
-        height: 20px;
+            height: 20px;
         }
     }
 
@@ -438,7 +435,7 @@
     &__reviews-image {
         height: 100%;
         object-fit: cover;
-}
+    }
 
     &__reviews-card:hover {
         opacity: 1;
@@ -454,7 +451,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0),$background );
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0), $background );
         cursor: pointer;
         z-index: 9;
     }
@@ -500,18 +497,19 @@
 
     &__btn {
         height: 200px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       margin-bottom: 13%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 13%;
 
-       @media #{$mobile} {
-        margin-bottom: 20%;
-    }
+        @media #{$mobile} {
+            margin-bottom: 20%;
+        }
     }
 
     &__btn-text {
         cursor: pointer;
+        text-decoration: none;
         background-color: $green;
         border: none;
         color: $light_btn_text;
@@ -523,5 +521,9 @@
         @media #{$mobile} {
             padding: 18px 79px 18px 79px;
         }
+    }
+
+    &__btn-text:hover {
+        background-color: #678064;
     }
 }
