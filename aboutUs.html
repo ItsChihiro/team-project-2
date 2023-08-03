@@ -7,230 +7,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О нас</title>
     <link rel="stylesheet" href="./style/normilize/normilize.css" />
-    <link rel="stylesheet" href="./style/aboutUs_style/aboutUs.css" />
     <link rel="stylesheet" href="./style/globalStyle/globalStyle.css">
+    <link rel="stylesheet" href="./style/aboutUs_style/aboutUs.css" />
 </head>
 
-<header class="header">
-    <div class="header__container">
-        <div class="header__wrapper">
-            <nav class="header__nav">
-                <div class="header__items">
-                    <ul class="header__left">
-                        <li class="header__item">
-                            <a href="./workshop.html" class="header__nav-link">Мастер-классы</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./order.html" class="header__nav-link">Мебель на заказ</a>
-                        </li>
-                    </ul>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <div class="header__items">
+                        <ul class="header__left">
+                            <li class="header__item">
+                                <a href="./workshop.html" class="header__nav-link">Мастер-классы</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./order.html" class="header__nav-link">Мебель на заказ</a>
+                            </li>
+                        </ul>
 
-                    <div class="header__logo">
-                        <a href="./home.html" class="header__logo-link"><img src="./assets/img/template_images/logo.svg"
-                                alt="logo" /></a>
+                        <div class="header__logo">
+                            <a href="./home.html" class="header__logo-link"><img
+                                    src="./assets/img/template_images/logo.svg" alt="logo" /></a>
+                        </div>
+
+                        <ul class="header__right">
+                            <li class="header__item">
+                                <a href="#" class="header__nav-link">Контакты</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="./aboutUs.html" class="header__nav-link active-link">О нас</a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <ul class="header__right">
-                        <li class="header__item">
-                            <a href="#" class="header__nav-link">Контакты</a>
+
+                    <ul class="header__items-mobile" id="mySidenav">
+                        <li>
+                            <div class="header__closebtn" onclick="closeNav()">
+                                <img src="./assets/img/header_images/close-solid.svg" alt="burger"
+                                    class="header__burger-closed" />
+                            </div>
                         </li>
                         <li class="header__item">
-                            <a href="./aboutUs.html" class="header__nav-link active-link">О нас</a>
+                            <a href="./home.html" class="header__nav-mobile">Главная</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./workshop.html" class="header__nav-mobile">Мастер-классы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./order.html" class="header__nav-mobile ">Мебель на заказ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__nav-mobile">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./aboutUs.html" class="header__nav-mobile">О нас</a>
                         </li>
                     </ul>
+
+                    <div class="header__burger">
+                        <button class="header__burger-btn" onclick="openNav()"><img
+                                src="./assets/img/header_images/burger.svg" alt="burger"
+                                class="header__burger-img" /></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="history container">
+            <div class="history__content">
+                <div class="history__title title">История создания мастерской</div>
+                <div class="history__title title"> NIKASON BRAND </div>
+                <div class="history__pic">
+                    <img src="./assets/img/img-aboutUs/history-photo.png" alt="history-photo"
+                        class="history__pic-img"></img>
+                </div>
+            </div>
+        </section>
+        <section class="history-facts">
+            <div class="history-facts__item">
+                <div class="history-facts__item-title title">+10 лет</div>
+                <div class="history-facts__item-text text">На рынке по производству мебели</div>
+            </div>
+
+            <div class="history-facts__item">
+                <div class="history-facts__item-title title">+1500</div>
+                <div class="history-facts__item-text text">Изготовлено мебели</div>
+            </div>
+
+            <div class="history-facts__item">
+                <div class="history-facts__item-title title">120 лет</div>
+                <div class="history-facts__item-text text">Самой старинной мебели для реставрации </div>
+            </div>
+        </section>
+
+        <section class="founder container">
+            <div class="founder__content">
+                <div class="founder__photo">
+                    <img src="./assets/img/img-aboutUs/founder-photo.png" alt="founder-photo"
+                        class="founder__photo-pic">
+                </div>
+                <div class="founder__dscr">
+                    <div class="founder__dscr-title subtitle">Никита Колодезников-Матчитов</div>
+                    <div class="founder__dscr-subtitle text">Основатель мастерской</div>
+                    <div class="founder__dscr-text text">С детства я был окружен творческими людьми, мой
+                        дедушка был строителем и мастером по дереву. Спустя много лет и мне передалась его
+                        любовь к дереву - в свободное время мастерил для себя небольшие изделия из
+                        древесины.</div>
+                    <div class="founder__dscr-text text">Более десяти лет назад построил двухэтажный гараж,
+                        на втором этаже расположилась наша мастерская. Начинал производство практически “с
+                        нуля”, с каждой зарплаты понемногу откладывал на покупку инстурментов и станков.
+                    </div>
+                    <div class="founder__dscr-text text">Постепенно начали появляться первые заказы.
+                        Несколько лет назад мы с супругой решили еще заняться ремонтом и реставрацией
+                        мебели. Эту идею предложили сами клиенты, поскольку периодически приходили с таким
+                        запросом. В основном, реставрацией занимается супруга Саргылана. Мы с ней одна
+                        сплоченная, дружная и отличная команда. </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="philosofi">
+                    <div class="philosofi__content">
+                        <div class="philosofi__title title">Философия мастерской NIKASON</div>
+                        <div class="philosofi__subtitle subtitle">Создавать что-то по-настоящему ценное и
+                            уникальное. Дарить радость и уют в каждый дом</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="massmedia container">
+            <div class="massmedia__content">
+                <div class="massmedia__title title">СМИ о нас</div>
+                <div class="massmedia__subtitle text">О нашей мастерской пишут многие издания Якутии</div>
+                <div class="massmedia__slider review">
+                    <div class="review__slider-container swiper-wrapper">
+                        <div class="review__slide swiper-slide">
+                            <img src="./assets/img/img-aboutUs/IMG_1.png" alt="slide-pic" class="review__slide-pic">
+                        </div>
+                        <div class="review__slide swiper-slide">
+                            <img src="./assets/img/img-aboutUs/IMG_2.png" alt="slide-pic" class="review__slide-pic">
+                        </div>
+                        <div class="review__slide swiper-slide">
+                            <img src="./assets/img/img-aboutUs/IMG_3.png" alt="slide-pic" class="review__slide-pic">
+                        </div>
+                        <div class="review__slide swiper-slide">
+                            <img src="./assets/img/img-aboutUs/IMG_4.png" alt="slide-pic" class="review__slide-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="application">
+            <div class="application__container container">
+                <div class="application__title">
+                    <h2 class="application__title-text">Оставьте заявку и мы с вами свяжемся</h2>
+                </div>
+                <div class="application__btn" name="top">
+                    <a name="top"></a>
+                    <a href="https://api.whatsapp.com/send?phone=79679272227" class="application__btn-text">Оставить
+                        заявку</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__row">
+                <div class="footer__column footer__column-one">
+                    <p>ИП Колодезников-Матчитов Н.И.</p>
+                    <p>ИНН 143515646663</p>
                 </div>
 
-
-                <ul class="header__items-mobile" id="mySidenav">
-                    <li>
-                        <div class="header__closebtn" onclick="closeNav()">
-                            <img src="./assets/img/header_images/close-solid.svg" alt="burger"
-                            class="header__burger-closed" />
-                        </div>
+                <ul class="footer__column footer__column-two">
+                    <li class="footer__item">
+                        <a href="./workshop.html" class="footer__nav-link">Мастер-классы</a>
                     </li>
-                    <li class="header__item">
-                        <a href="./home.html" class="header__nav-mobile">Главная</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="./workshop.html" class="header__nav-mobile">Мастер-классы</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="./order.html" class="header__nav-mobile ">Мебель на заказ</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__nav-mobile">Контакты</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="./aboutUs.html" class="header__nav-mobile">О нас</a>
+                    <li class="footer__item">
+                        <a href="./order.html" class="footer__nav-link">Мебель на заказ</a>
                     </li>
                 </ul>
 
-                <div class="header__burger">
-                    <button class="header__burger-btn" onclick="openNav()"><img
-                            src="./assets/img/header_images/burger.svg" alt="burger"
-                            class="header__burger-img" /></button>
+                <ul class="footer__column footer__column-three">
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Контакты</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./aboutUs.html" class="footer__nav-link">О нас</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__column footer__column-four">
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Политика кофиденциальности</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__nav-link">Договор оферты</a>
+                    </li>
+                </ul>
+
+                <div class="footer__media">
+                    <a href="https://t.me/tidyo9aQZws0NzVi" class="footer__media-item footer__telegram">
+                        <img src="./assets/img/template_images/telegram.svg" alt="telegram" class="media-icon">
+                    </a>
+
+                    <a href="https://www.instagram.com/mebel_ot_nikason/" class="footer__media-item">
+                        <img src="./assets/img/template_images/insta.svg" alt="instagram" class="media-icon">
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=79679272227" class="footer__media-item">
+                        <img src="./assets/img/template_images/watsapp.svg" alt="watsapp" class="media-icon">
+                    </a>
                 </div>
             </nav>
         </div>
-    </div>
-</header>
+    </footer>
 
-<main>
-    <section class="history container">
-        <div class="history__content">
-            <div class="history__title title">История создания мастерской</div>
-            <div class="history__title title"> NIKASON BRAND </div>
-            <div class="history__pic">
-                <img src="./assets/img/img-aboutUs/history-photo.png" alt="history-photo"
-                    class="history__pic-img"></img>
-            </div>
-        </div>
-    </section>
-    <section class="history-facts">
-        <div class="history-facts__item">
-            <div class="history-facts__item-title title">+10 лет</div>
-            <div class="history-facts__item-text text">На рынке по производству мебели</div>
-        </div>
-
-        <div class="history-facts__item">
-            <div class="history-facts__item-title title">+1500</div>
-            <div class="history-facts__item-text text">Изготовлено мебели</div>
-        </div>
-
-        <div class="history-facts__item">
-            <div class="history-facts__item-title title">120 лет</div>
-            <div class="history-facts__item-text text">Самой старинной мебели для реставрации </div>
-        </div>
-    </section>
-
-    <section class="founder container">
-        <div class="founder__content">
-            <div class="founder__photo">
-                <img src="./assets/img/img-aboutUs/founder-photo.png" alt="founder-photo" class="founder__photo-pic">
-            </div>
-            <div class="founder__dscr">
-                <div class="founder__dscr-title subtitle">Никита Колодезников-Матчитов</div>
-                <div class="founder__dscr-subtitle text">Основатель мастерской</div>
-                <div class="founder__dscr-text text">С детства я был окружен творческими людьми, мой
-                    дедушка был строителем и мастером по дереву. Спустя много лет и мне передалась его
-                    любовь к дереву - в свободное время мастерил для себя небольшие изделия из
-                    древесины.</div>
-                <div class="founder__dscr-text text">Более десяти лет назад построил двухэтажный гараж,
-                    на втором этаже расположилась наша мастерская. Начинал производство практически “с
-                    нуля”, с каждой зарплаты понемногу откладывал на покупку инстурментов и станков.
-                </div>
-                <div class="founder__dscr-text text">Постепенно начали появляться первые заказы.
-                    Несколько лет назад мы с супругой решили еще заняться ремонтом и реставрацией
-                    мебели. Эту идею предложили сами клиенты, поскольку периодически приходили с таким
-                    запросом. В основном, реставрацией занимается супруга Саргылана. Мы с ней одна
-                    сплоченная, дружная и отличная команда. </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="philosofi">
-                <div class="philosofi__content">
-                    <div class="philosofi__title title">Философия мастерской NIKASON</div>
-                    <div class="philosofi__subtitle subtitle">Создавать что-то по-настоящему ценное и
-                        уникальное. Дарить радость и уют в каждый дом</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="massmedia container">
-        <div class="massmedia__content">
-            <div class="massmedia__title title">СМИ о нас</div>
-            <div class="massmedia__subtitle text">О нашей мастерской пишут многие издания Якутии</div>
-            <div class="massmedia__slider review">
-                <div class="review__slider-container swiper-wrapper">
-                    <div class="review__slide swiper-slide">
-                        <img src="./assets/img/img-aboutUs/IMG_1.png" alt="slide-pic" class="review__slide-pic">
-                    </div>
-                    <div class="review__slide swiper-slide">
-                        <img src="./assets/img/img-aboutUs/IMG_2.png" alt="slide-pic" class="review__slide-pic">
-                    </div>
-                    <div class="review__slide swiper-slide">
-                        <img src="./assets/img/img-aboutUs/IMG_3.png" alt="slide-pic" class="review__slide-pic">
-                    </div>
-                    <div class="review__slide swiper-slide">
-                        <img src="./assets/img/img-aboutUs/IMG_4.png" alt="slide-pic" class="review__slide-pic">
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="application">
-        <div class="application__container container">
-            <div class="application__title">
-                <h2 class="application__title-text">Оставьте заявку и мы с вами свяжемся</h2>
-            </div>
-            <div class="application__btn" name="top">
-                <a name="top"></a>
-                <a href="https://api.whatsapp.com/send?phone=79679272227" class="application__btn-text">Оставить
-                    заявку</a>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-    <div class="footer__container">
-        <nav class="footer__row">
-            <div class="footer__column footer__column-one">
-                <p>ИП Колодезников-Матчитов Н.И.</p>
-                <p>ИНН 143515646663</p>
-            </div>
-
-            <ul class="footer__column footer__column-two">
-                <li class="footer__item">
-                    <a href="./workshop.html" class="footer__nav-link">Мастер-классы</a>
-                </li>
-                <li class="footer__item">
-                    <a href="./order.html" class="footer__nav-link">Мебель на заказ</a>
-                </li>
-            </ul>
-
-            <ul class="footer__column footer__column-three">
-                <li class="footer__item">
-                    <a href="#" class="footer__nav-link">Контакты</a>
-                </li>
-                <li class="header__item">
-                    <a href="./aboutUs.html" class="footer__nav-link">О нас</a>
-                </li>
-            </ul>
-
-            <ul class="footer__column footer__column-four">
-                <li class="footer__item">
-                    <a href="#" class="footer__nav-link">Политика кофиденциальности</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" class="footer__nav-link">Договор оферты</a>
-                </li>
-            </ul>
-
-            <div class="footer__media">
-                <a href="https://t.me/tidyo9aQZws0NzVi" class="footer__media-item footer__telegram">
-                    <img src="./assets/img/template_images/telegram.svg" alt="telegram" class="media-icon">
-                </a>
-
-                <a href="https://www.instagram.com/mebel_ot_nikason/" class="footer__media-item">
-                    <img src="./assets/img/template_images/insta.svg" alt="instagram" class="media-icon">
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=79679272227" class="footer__media-item">
-                    <img src="./assets/img/template_images/watsapp.svg" alt="watsapp" class="media-icon">
-                </a>
-            </div>
-        </nav>
-    </div>
-</footer>
-
-<script src="./js/header.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 
 </html>
